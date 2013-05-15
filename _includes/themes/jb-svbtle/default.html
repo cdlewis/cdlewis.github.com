@@ -20,14 +20,13 @@
 
     {% include JB/analytics %}
 
-    <meta name="generator" content="WordPress 3.5.1"/>
     <meta http-equiv="X-UA-Compatible" content="IE=8"/>
 </head>
 <body class="home blog">
 
     <header id="sidebar">
         <figure class="logo medium">
-            <a href="{{ BASE_PATH }}/">{{ site.title }}</a>
+            <a style="background-image: url( '{{ ASSET_PATH }}/images/icons/{{ site.icon }}.png' );" href="{{ BASE_PATH }}/">{{ site.title }}</a>
         </figure>
         <h1><a href="{{ BASE_PATH }}/">{{ site.title }}</a></h1>
         <h2><a href="{{ BASE_PATH }}/">{{ site.author.name }}</a></h2>
