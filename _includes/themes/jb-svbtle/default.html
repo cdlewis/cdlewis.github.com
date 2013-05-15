@@ -25,8 +25,8 @@
 <body class="home blog">
 
     <header id="sidebar">
-        <figure class="logo medium">
-            <a style="background-image: url( '{{ ASSET_PATH }}/images/icons/{{ site.icon }}.png' );" href="{{ BASE_PATH }}/">{{ site.title }}</a>
+        <figure style="background-color: #{{ site.color }};" class="logo medium">
+            <a style="background-color: #{{ site.color }}; background-image: url( '{{ ASSET_PATH }}/images/icons/{{ site.icon }}.png' );" href="{{ BASE_PATH }}/">{{ site.title }}</a>
         </figure>
         <h1><a href="{{ BASE_PATH }}/">{{ site.title }}</a></h1>
         <h2><a href="{{ BASE_PATH }}/">{{ site.author.name }}</a></h2>
