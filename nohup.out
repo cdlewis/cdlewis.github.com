@@ -1,0 +1,18 @@
+/Users/chris/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/utils.rb:52:in `gethostbyname': Interrupt
+	from /Users/chris/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/utils.rb:52:in `getservername'
+	from /Users/chris/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/config.rb:23:in `<module:Config>'
+	from /Users/chris/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/config.rb:18:in `<module:WEBrick>'
+	from /Users/chris/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/config.rb:17:in `<top (required)>'
+	from /Users/chris/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+	from /Users/chris/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+	from /Users/chris/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick.rb:14:in `<top (required)>'
+	from /Users/chris/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+	from /Users/chris/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+	from /Users/chris/.rvm/gems/ruby-1.9.2-p320/gems/jekyll-0.11.2/bin/jekyll:263:in `<top (required)>'
+	from /Users/chris/.rvm/gems/ruby-1.9.2-p320/bin/jekyll:19:in `load'
+	from /Users/chris/.rvm/gems/ruby-1.9.2-p320/bin/jekyll:19:in `<main>'
+	from /Users/chris/.rvm/gems/ruby-1.9.2-p320/bin/ruby_noexec_wrapper:14:in `eval'
+	from /Users/chris/.rvm/gems/ruby-1.9.2-p320/bin/ruby_noexec_wrapper:14:in `<main>'
+Configuration from /Users/chris/Desktop/cdlewis.github.com/_config.yml
+Auto-regenerating enabled: /Users/chris/Desktop/cdlewis.github.com -> /Users/chris/Desktop/cdlewis.github.com/_site
+[2013-05-15 15:31:19] regeneration: 51 files changed
