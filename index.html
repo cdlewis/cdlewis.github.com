@@ -1,15 +1,15 @@
 ---
 layout: default
-title: Blog
+title: Chris' Blog
 ---
-
 
 {% include JB/setup %}
 
-{% for post in paginator.posts %}
+{% for post in site.posts %}
+
    <!-- here add you post markup -->
 <header id="begin">
-  <time datetime="{{ post.date }}" id="top_time">{{ post.date | date_to_string }}</time>
+  <time datetime="{{ post.date }}" id="top_time">{{ post.date | date: "%d %B %Y" }}</time>
 </header>
 
 <article class="post">
@@ -23,7 +23,5 @@ title: Blog
 </div><!-- .entry-content -->
         
 </article><!-- #post-## -->
-
-
 
 {% endfor %}
