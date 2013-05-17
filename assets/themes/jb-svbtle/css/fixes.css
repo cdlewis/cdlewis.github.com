@@ -1,12 +1,4 @@
 /* --- From layout: START--- */
-blockquote {
-    border-color: #ff0000;
-}
-
-figure.logo, aside.alsoby li a:hover, aside.kudo.complete span.circle {
-    background-color: #ff0000;
-}
-
 section.preview header#begin h2, ul#user_meta a:hover, nav.pagination span.next a, nav.pagination span.prev a {
     color: #ff0000;
 }
@@ -16,13 +8,11 @@ ul#user_meta a:hover, nav.pagination span.next a, nav.pagination span.prev a {
 }
 
 ::-moz-selection {
-    background: #ff0000;
     color: #fff;
     text-shadow: none;
 }
 
 ::selection {
-    background: #ff0000;
     color: #fff;
     text-shadow: none;
 }
@@ -49,3 +39,6 @@ header#sidebar h3 {
     margin-bottom: 20px;
     margin-top: 20px;
 }
+
+/* Fix Margin on Sidebar Links */
+.page_item { margin-bottom: 12px !important; }
