@@ -6,18 +6,7 @@ section.preview header#begin h2, ul#user_meta a:hover, nav.pagination span.next 
 ul#user_meta a:hover, nav.pagination span.next a, nav.pagination span.prev a {
     border-color: #ff0000;
 }
-
-::-moz-selection {
-    color: #fff;
-    text-shadow: none;
-}
-
-::selection {
-    color: #fff;
-    text-shadow: none;
-}
 /* --- From layout: END --- */
-
 
 header#begin {
     border-bottom: 1px solid #E2E2E2

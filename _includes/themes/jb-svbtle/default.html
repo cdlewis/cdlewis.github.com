@@ -18,6 +18,7 @@
 			.logo, .logo a, ::selection, blockquote {
 				background-color: #{{ site.color }} !important;
 			}
+			::-moz-selection {background-color: #{{ site.color }} !important; }
 			.logo a {
 				background-image: url( '{{ ASSET_PATH }}/images/icons/{{ site.icon }}.png' );
 			}
