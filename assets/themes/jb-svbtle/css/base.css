@@ -502,5 +502,11 @@ section#river article p img, section#river article p iframe, section#river artic
 
 /* Some selection styling, colour is defined in default.html */
 
-::selection { text-shadow: none; }
-::-moz-selection { text-shadow: none; }
+::selection {
+	text-shadow: none;
+	color: white;
+}
+::-moz-selection {
+	text-shadow: none;
+	color: white;
+}
