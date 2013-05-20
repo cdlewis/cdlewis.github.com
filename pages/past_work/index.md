@@ -2,6 +2,8 @@
 layout: page
 title: "Past Work"
 description: ""
+group: navigation
+permalink: /
 ---
 {% include JB/setup %}
 
