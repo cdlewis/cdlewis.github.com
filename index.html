@@ -1,19 +1,14 @@
 ---
 layout: default
-title: Chris' Blog
+title: Chris' Blag
 ---
-{% include JB/setup %}
-{% for post in site.posts %}
-
+{% include JB/setup %}{% for post in site.posts %}
 <header id="begin">
 	<time datetime="{{ post.date }}" id="top_time">{{ post.date | date: "%d %B %Y" }}</time>
 </header>
-
 <article class="post">
 	<h2 class="entry-title">
 		<a href="{{ post.url }}" class="no-link" title="Permalink to {{ post.title }}" rel="bookmark">{{ post.title }}</a>
 	</h2>
 	{{ post.content }}
-</article>
-
-{% endfor %}
+</article>{% endfor %}

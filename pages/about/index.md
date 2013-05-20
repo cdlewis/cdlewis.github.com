@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "About"
-description: ""
+description: "Information about me and my blag."
 group: navigation
 permalink: /
 ---

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Past Work"
-description: ""
+description: "My portfolio."
 group: navigation
 permalink: /
 ---
