@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Assorted Projects"
+title: "Misc Projects"
 description: "Miscellaneous collection of old code."
 group: navigation
 permalink: /
