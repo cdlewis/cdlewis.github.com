@@ -4,6 +4,7 @@ title: "About"
 description: "Information about me and my blag."
 group: navigation
 permalink: /
+weight: 1
 ---
 {% include JB/setup %}
 
