@@ -4,6 +4,7 @@ title: "Past Work"
 description: "My portfolio."
 group: navigation
 permalink: /
+weight: 1
 ---
 {% include JB/setup %}
 
