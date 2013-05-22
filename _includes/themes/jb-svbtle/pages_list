@@ -1,6 +1,6 @@
 {% assign sorted_pages = site.pages | sort:"name" %}
 {% for node in sorted_pages %}
-	{% if group == null or group == node.group %}
+	{% if group == nil or group == node.group %}
 		{% if page.url == node.url %}
 			{% assign link_class = 'class="active"' %}
 		{% endif %}

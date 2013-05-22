@@ -3,6 +3,7 @@ layout: page
 title: "About"
 description: "Information about me and my blag."
 group: navigation
+permalink: /
 ---
 {% include JB/setup %}
 
