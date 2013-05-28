@@ -103,6 +103,12 @@ a:link, a:visited, a:hover, a:active { text-decoration: none }
 
 /* Articles */
 
+p.caption {
+	font-size: 80% !important;
+	text-align: center;
+	font-style: italic;
+}
+
 blockquote {
 	display: inline-block;
 	padding-left: 18px;
