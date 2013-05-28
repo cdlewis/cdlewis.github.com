@@ -210,7 +210,10 @@ header#sidebar h3 {
 	margin-bottom:25px;
 	margin-top:10px
 }
-header#begin { padding: 40px 0 40px 40px }
+
+header#begin { padding: 0 0 0 40px; }
+section#river > header:first-child { padding: 40px 0 40px 40px; } /* Only top and bottom padding for first header */
+
 header#begin time {
 	display: block;
 	font-family: "freight-sans-pro",sans-serif;
