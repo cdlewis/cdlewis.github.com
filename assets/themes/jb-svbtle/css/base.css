@@ -382,17 +382,36 @@ figure.logo.medium a {
 }
 
 @media all and (max-width:750px) {
+	
+	/* Sidebar */
+
 	header#sidebar{display:block;position:relative;min-height:0;width:100%;max-width:100%;padding:0;margin:0;float:none;text-align:center}
 	header#sidebar h1,header#sidebar h2,header#sidebar h3{max-width:70%;width:auto;margin:0 auto}
 	header#sidebar h2{margin-top:2px}
 	header#sidebar h1{margin-top:5px}
 	header#sidebar h3{margin-top:5px;font-size:15px;margin-bottom:15px}
 	header#sidebar figure.logo{margin:0 auto;position:relative;left:auto;right:auto;margin-top:20px}
-	section#river{margin-left:0;border-left:none;margin-top:15px}
-	ul#user_nav{margin:0}
-	ul#user_nav li{display:inline;margin:0;margin-right:0;margin-left:0}
-	ul#user_nav li.feed{display:none}
-	ul#user_nav li a{margin:0;margin-bottom:5px;margin-right:3px}
+
+	section#river {
+		margin-left: 0;
+		border-left: none;
+	}
+
+	/* Navigation */
+
+	ul#user_nav {
+		margin: 0;
+		margin-top: 30px
+	}
+	ul#user_nav li {
+		display: inline;
+		margin: 0;
+		margin-right: 0;
+		margin-left: 0
+	}
+	ul#user_nav li.feed { display: none }
+	ul#user_nav li a { margin: 0; margin-bottom: 5px; margin-right: 3px }
+
 	#svbtle_linkback{top:-10px;right:5px;left:auto;position:absolute}
 	#svbtle_linkback span.svbtle{display:none}
 	header#begin{display:none}
@@ -400,12 +419,31 @@ figure.logo.medium a {
 	section.preview header#begin{padding:20px;padding-bottom:5px;padding-top:5px}
 	section.preview header#begin h2{font-size:22px;margin-bottom:0;line-height:20px}
 	section.preview header#begin h4{font-size:14px}
-	article h1,article h2,article h3,article h4,article h5,article h6,article p,article blockquote{max-width:100%;padding-right:0}
-	article.post{padding:60px;padding-top:30px}
-	body section#river article pre code{margin:0;padding-left:60px;margin-left:-60px;padding-right:60px;width:100%}
-	article hr{width:80%;margin:0 auto;margin-top:35px;margin-bottom:30px}
-	article blockquote p,article blockquote h2,article blockquote h1,article blockquote h3,article blockquote h4,article blockquote h5,article blockquote h6{padding-left:15px}
-	article hr,article p,article h2,article h1,article h3,article h4,article h5,article h6,article blockquote p,article blockquote h2,article blockquote h1,article blockquote h3,article blockquote h4,article blockquote h5,article blockquote h6{max-width:100%}
+
+	/* Article */
+
+	article h1, article h2, article h3, article h4, article h5, article h6, article p, article blockquote {
+		max-width: 100%;
+		padding-right:0
+	}
+	article.post {
+		padding: 10px 60px 60px 60px;
+	}
+	body section#river article pre code {
+		margin: 0;
+		padding-left: 60px;
+		margin-left: -60px;
+		padding-right: 60px;
+		width: 100%
+	}
+	article hr {
+		width: 80%;
+		margin: 0 auto;
+		margin-top: 35px;
+		margin-bottom: 30px
+	}
+	article blockquote p, article blockquote h2, article blockquote h1, article blockquote h3, article blockquote h4, article blockquote h5, article blockquote h6 { padding-left: 15px }
+	article hr, article p, article h2, article h1, article h3, article h4, article h5, article h6, article blockquote p, article blockquote h2, article blockquote h1, article blockquote h3, article blockquote h4, article blockquote h5, article blockquote h6 { max-width: 100% }
 	article blockquote{margin-left:0;max-width:none;min-width:0;margin-right:0;padding:0}
 	article blockquote blockquote{margin-left:10px;margin-right:0}
 	article blockquote p,{padding-left:15px}
@@ -435,7 +473,6 @@ figure.logo.medium a {
 		width: 90px;
 		height: 90px
 	}
-	article.post{ padding-top: 20px }
 	article img { width: 100% }
 	section#river article p img,section#river article p iframe,section#river article iframe,section#river article p object,section#river video,section#river article p video {
 		display: block;
@@ -459,9 +496,7 @@ figure.logo.medium a {
 
 @media all and (max-width:560px) {
 	article.post {
-		padding: 20px;
-		padding-left: 15px;
-		padding-right: 10px
+		padding: 0px 10px 20px 15px;
 	}
 	aside.read_next {
 		display: block;

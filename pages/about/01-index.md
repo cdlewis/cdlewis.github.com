@@ -17,6 +17,6 @@ I’ve worked in a number of positions related to public policy, law and technol
 
 ## The Blog
 
-This site was built using [Jekyll-Bootstrap](http://jekyllbootstrap.com) and is hosted on [Github Pages](http://pages.github.com). It uses forked version of the wonderful [Svbtle](https://svbtle.com) clone made by [Kevin Xue](https://github.com/kevinxueliang/jb-svbtle).
+This site was built using [Jekyll-Bootstrap](http://jekyllbootstrap.com) and is hosted on [Github Pages](http://pages.github.com). It uses heavily modified version of the wonderful [Svbtle](https://svbtle.com) clone made by [Kevin Xue](https://github.com/kevinxueliang/jb-svbtle).
 
 The complete source code can be found [here](https://github.com/cdlewis/cdlewis.github.com).
