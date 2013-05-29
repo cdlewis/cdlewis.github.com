@@ -3,7 +3,7 @@ layout: page
 title: "Misc Projects"
 description: "Miscellaneous collection of old code."
 group: navigation
-permalink: /
+permalink: /pages/projects/
 ---
 {% include JB/setup %}
 

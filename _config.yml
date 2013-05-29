@@ -3,8 +3,11 @@
 permalink: /:categories/:year/:month/:day/:title 
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-auto: true
 pygments: true
+relative_permalinks: false # Jekyll 1.1 defaults to absolute permalinks
+
+# Pagination
+paginate: 5
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.

@@ -11,7 +11,7 @@ After a long and arduous process I finally have VISAs to study and travel in the
 
 The complexity of the process will challenge even the most seasoned form-fillers. Now that I'm on the other side, I thought I'd put all my redundant VISA knowledge to use by constructing a map for future adventurers.
 
-![US VISA Process Map](images/us_visa_process.png)
+![US VISA Process Map](/images/us_visa_process.png)
 
 <p class="caption">Horizontal lines take priority over vertical ones, and must be completed before moving down.</p>
 

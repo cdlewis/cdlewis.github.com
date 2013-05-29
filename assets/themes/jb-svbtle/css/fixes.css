@@ -1,13 +1,3 @@
-/* --- From layout: START--- */
-section.preview header#begin h2, ul#user_meta a:hover, nav.pagination span.next a, nav.pagination span.prev a {
-    color: #ff0000;
-}
-
-ul#user_meta a:hover, nav.pagination span.next a, nav.pagination span.prev a {
-    border-color: #ff0000;
-}
-/* --- From layout: END --- */
-
 header#begin {
     border-bottom: 1px solid #E2E2E2
 }

@@ -3,7 +3,7 @@ layout: page
 title: "Past Work"
 description: "My portfolio."
 group: navigation
-permalink: /
+permalink: /pages/past_work/
 ---
 {% include JB/setup %}
 
