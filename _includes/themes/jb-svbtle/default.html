@@ -17,13 +17,10 @@
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 
 		<style type="text/css">
-			.logo, .logo a, ::selection, blockquote {
-				background-color: #{{ site.color }} !important;
-			}
-			::-moz-selection {background-color: #{{ site.color }} !important; }
-			.logo a {
-				background-image: url( '{{ ASSET_PATH }}/images/icons/{{ site.icon }}.png' );
-			}
+			.logo, .logo a, ::selection { background-color: #{{ site.color }} !important }
+			blockquote { border-left-color: #{{ site.color }} }
+			::-moz-selection {background-color: #{{ site.color }} !important }
+			.logo a { background-image: url( '{{ ASSET_PATH }}/images/icons/{{ site.icon }}.png' ) }
 		</style>
 
 		<!--[if lt IE 9]>

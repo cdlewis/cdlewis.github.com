@@ -17,6 +17,8 @@ I’ve worked in a number of positions related to public policy, law and technol
 
 ## The Blog
 
-This site was built using [Jekyll-Bootstrap](http://jekyllbootstrap.com) and is hosted on [Github Pages](http://pages.github.com). It uses heavily modified version of [Kevin Xue's](https://github.com/kevinxueliang/jb-svbtle) [Svbtle](https://svbtle.com) clone.
+This site is built with [Jekyll-Bootstrap](http://jekyllbootstrap.com) and hosted on [Github Pages](http://pages.github.com). It uses heavily modified version of [Kevin Xue's](https://github.com/kevinxueliang/jb-svbtle) [Svbtle](https://svbtle.com) clone.
+
+Jekyll is a static site generator created by Tom Preston-Werner. It is designed around the idea that it can be helpful to [blog using the same tools as in coding](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html). Since Github has built in Jekyll support, the site will automatically be regenerated with every push. You also get all the advantages of version control for your past entries (e.g. past versions for this [page](https://github.com/cdlewis/cdlewis.github.com/commits/master/pages/about/01-index.md)).
 
 The source code for my blog can be found [here](https://github.com/cdlewis/cdlewis.github.com).
