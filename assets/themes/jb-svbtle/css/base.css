@@ -47,6 +47,8 @@ textarea{overflow:auto;vertical-align:top;resize:vertical}
 input:invalid,textarea:invalid{background-color:#f0dddd}
 table{border-collapse:collapse;border-spacing:0}
 td{vertical-align:top}
+iframe { margin-top: 40px }
+
 .chromeframe{margin:.2em 0;background:#ccc;color:black;padding:.2em 0}
 .ir{display:block;border:0;text-indent:-999em;overflow:hidden;background-color:transparent;background-repeat:no-repeat;text-align:left;direction:ltr;*line-height:0}
 .ir br{display:none}
@@ -134,7 +136,7 @@ hr{border:solid #f4f3f3;border-width:5px 0 0;clear:both;margin:0;margin-left:90p
 a,a:visited{color:#333;text-decoration:none;outline:0}
 a:hover,a:focus{color:#000}
 p a,p a:visited{line-height:inherit}
-article img, article iframe, article object {
+article img, article object {
 	display: block;
 	margin: 0 auto;
 	padding: 0;
@@ -438,7 +440,7 @@ figure.logo.medium a {
 		font-size: 20px;
 		line-height: 30px
 	}
-	article h1,article h2,article h3,article h4,article h5,article h6,article p,article blockquote { max-width: 600px }
+	article h1, article h2, article h3, article h4, article h5, article h6, article p, article blockquote, article iframe { max-width: 600px }
 	article p img.bleed {
 		min-width: 650px;
 		max-width: 650px
@@ -486,7 +488,7 @@ figure.logo.medium a {
 
 	/* Article */
 
-	article h1, article h2, article h3, article h4, article h5, article h6, article p, article blockquote {
+	article h1, article h2, article h3, article h4, article h5, article h6, article p, article blockquote, article iframe {
 		max-width: 100%;
 		padding-right:0
 	}
