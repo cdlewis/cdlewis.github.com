@@ -6,8 +6,6 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 pygments: true
 relative_permalinks: false # Jekyll 1.1 defaults to absolute permalinks
 
-baseurl: http://chrislewis.com.au/
-
 # Pagination
 paginate: 5
 
