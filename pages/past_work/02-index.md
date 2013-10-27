@@ -17,14 +17,6 @@ Thread is based in Malvern and makes excellent coffee. The website is still live
 
 ![Thread Café](preview_thread_cafe.png)
 
-## Obama-Loses
-
-Made during the 2012 US Election as a parody of Romney Makes. My intention was to highlight the large, and growing, budget deficit. It was a slightly altered version of the original.
-
-It ended up getting 500 or so 'likes' on Facebook and it had a [minor appearance](http://redalertpolitics.com/2012/09/27/student-launches-obama-loses-website) in the online press.
-
-![Obama-Loses](preview_obama_loses.png)
-
 ## Coalition Deregulation Taskforce
 
 Homepage for the 2011-12 Coalition Deregulation Taskforce. Used a custom Wordpress theme and plugin for handling submissions.
