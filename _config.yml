@@ -17,11 +17,11 @@ icon : balloon
 tagline : Site Tagline
 color : 356AA0
 author :
-  name : Chris Lewis 
-  email : chris.lewis2@gmail.com 
-  github : cdlewis 
-  twitter : chrislewis_aus 
-  feedburner : feedname
+  name : Chris Lewis
+  email : chris.lewis2@gmail.com
+  github : cdlewis
+  twitter : chrislewis_aus
+  linkedin: cdlewis
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 

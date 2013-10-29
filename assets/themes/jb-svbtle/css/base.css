@@ -262,6 +262,42 @@ ul#user_nav li a, .nav_button {
 }
 ul#user_nav li a:hover, .nav_button:hover { color: #000; border-color: #000 }
 
+/* Social */
+
+#social_icons {
+	position: fixed;
+	bottom: 0;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+#social_icons a {
+	font-size: 30px;
+	padding: 5px;
+	width: 38px;
+	text-align: center;
+	vertical-align: center;
+	color: gray;
+}
+
+#social_icons a:hover {
+	color: black;
+	cursor: pointer;
+}
+
+@media all and (max-width:910px) {
+#social_icons a {
+	font-size: 25px;
+	width: 30px;
+}
+}
+
+@media all and (max-width:750px) {
+#social_icons {
+	position: relative;
+}
+}
+
 a.contents{background:url(/cargo/icons/list_icon.png) center center no-repeat;background-size:100%;width:25px;height:25px;text-indent:-9999px;display:block;float:right;margin-right:50px;z-index:20;position:relative;opacity:.01;margin-top:-10px}a.contents:hover{opacity:1}
 a.contents.articles{background:url(/cargo/icons/articles_icon.png) center center no-repeat}article.post{display:block;position:relative;padding-left:50px;padding-top:40px;padding-bottom:40px;border-top:1px solid #e2e2e2;min-height:130px;overflow-x:hidden}
 article h1,article h2,article h3,article h4,article h5,article h6,article p,article blockquote{max-width:550px;padding-right:100px}
