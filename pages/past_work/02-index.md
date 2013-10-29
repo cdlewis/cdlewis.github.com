@@ -7,19 +7,23 @@ permalink: /pages/past_work/
 ---
 {% include JB/setup %}
 
-Over the years I’ve completed a number of programming projects, including web development, scraping and data-mining. A selection of public projects can be found bellow.
-
-If you have a project in mind, please [get in touch](mailto:chris.lewis2@gmail.com).
+Over the years I've worked on a number of web projects, a collection of which can be found on this page. If you have a particular project in mind, please [get in touch](mailto:chris.lewis2@gmail.com).
 
 ## Thread Café
 
-Thread is based in Malvern and makes excellent coffee. The website is still live and can be found [here](http://www.threadcafe.com.au). Site uses custom Wordpress theme, Facebook integration and high-res photography.
+Thread is a Malvern based speciality coffee shop. The website is still live and can be found [here](http://www.threadcafe.com.au). Site uses custom Wordpress theme, Facebook integration and high-res photography.
 
 ![Thread Café](preview_thread_cafe.png)
 
+## Melbourne University Law Review
+
+As the core layout and functionality was already provided by the University's CMS, work mainly involved adding content and modifying features as needed, e.g. Twitter feed. The site is still online and can be found [here](http://www.mulr.com.au).
+
+![Melbourne University Law Review](preview_mulr.png)
+
 ## Coalition Deregulation Taskforce
 
-Homepage for the 2011-12 Coalition Deregulation Taskforce. Used a custom Wordpress theme and plugin for handling submissions.
+Homepage for the 2011-12 Coalition Deregulation Taskforce. Uses a custom Wordpress theme and a plugin for handling submissions.
 
 ![Coalition Deregulation Taskforce](preview_dereg_taskforce.png)
 
