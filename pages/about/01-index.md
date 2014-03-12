@@ -9,7 +9,7 @@ permalink: /pages/about/
 
 ## Me
 
-My name is Christopher Lewis. I was born in Melbourne, Australia and am currently a JD (law) student at The University of Melbourne. Before starting my JD, I completed a computer science degree at the same institution.
+I'm a computer science / law graduate from The University of Melbourne.
 
 I’m interested in programming, startups, technology, law, politics and history (no particular order).
 
