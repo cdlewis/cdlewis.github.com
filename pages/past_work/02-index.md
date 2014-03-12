@@ -7,7 +7,14 @@ permalink: /pages/past_work/
 ---
 {% include JB/setup %}
 
-Over the years I've worked on a number of web projects, a collection of which can be found on this page. If you have a particular project in mind, please [get in touch](mailto:chris.lewis2@gmail.com).
+I've worked on a number of web projects, some of which can be found on this page.
+
+## Menzies House
+
+Founded in 2010, Menzies House is not-for-profit policy blog, which went through a design refresh/relaunch in 2014.
+The site uses a custom Wordpress theme with full social media integration and designed with high traffic volume in mind.
+
+![Menzies House](preview_menzies_house.png)
 
 ## Thread Café
 
