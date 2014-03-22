@@ -7,26 +7,25 @@ permalink: /pages/past_work/
 ---
 {% include JB/setup %}
 
-I've worked on a number of web projects, some of which can be found on this page.
+This page contains some of my past web-development projects. The images link to site if it is still live.
 
 ## Menzies House
 
-Founded in 2010, Menzies House is not-for-profit policy blog, which went through a design refresh/relaunch in 2014.
-The site uses a custom Wordpress theme with full social media integration and designed with high traffic volume in mind.
+Menzies House is forum for policy discussion with an emphasis on classical liberalism. I was responsible for the current look, which was part of a broader relaunch in 2014. It uses a custom Wordpress theme with social media integration and was designed to accomodate high volumes of traffic.
 
-![Menzies House](preview_menzies_house.png)
+[![Menzies House](preview_menzies_house.png)](http://www.menzieshouse.com.au)
 
 ## Thread Café
 
 Thread is a Malvern based speciality coffee shop. The website is still live and can be found [here](http://www.threadcafe.com.au). Site uses custom Wordpress theme, Facebook integration and high-res photography.
 
-![Thread Café](preview_thread_cafe.png)
+[[![Thread Café](preview_thread_cafe.png)](http://www.threadcafe.com.au)
 
 ## Melbourne University Law Review
 
-As the core layout and functionality was already provided by the University's CMS, work mainly involved adding content and modifying features as needed, e.g. Twitter feed. The site is still online and can be found [here](http://www.mulr.com.au).
+As the core layout and functionality was already provided by the University's CMS, work mainly involved adding content and modifying features as needed, e.g. Twitter feed.
 
-![Melbourne University Law Review](preview_mulr.png)
+[![Melbourne University Law Review](preview_mulr.png)](http://www.mulr.com.au)
 
 ## Coalition Deregulation Taskforce
 
