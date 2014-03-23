@@ -19,7 +19,7 @@ Menzies House is forum for policy discussion with an emphasis on classical liber
 
 Thread is a Malvern based speciality coffee shop. The website is still live and can be found [here](http://www.threadcafe.com.au). Site uses custom Wordpress theme, Facebook integration and high-res photography.
 
-[[![Thread Café](preview_thread_cafe.png)](http://www.threadcafe.com.au)
+[![Thread Café](preview_thread_cafe.png)](http://www.threadcafe.com.au)
 
 ## Melbourne University Law Review
 
