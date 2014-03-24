@@ -35,7 +35,7 @@ Three basic operations are supported by disjoint-sets:
 
 Because of the importance of Union( x, y ) and Find( x ), disjoint-sets are sometimes referred to as union-find data structures.
 
-Disjoint-sets, like the initial hash table approach, map element → subset. A particular subset is uniquely identified by the root element in the tree representing that subset. An element is a root element if it is its own parent.
+Disjoint-sets, like the initial hash table approach, can be implemented as a mapping of element → subset. A particular subset is uniquely identified by the root element in the tree representing that subset. And an element is a root element if it is its own parent.
 
 ![disjoint set representation](/images/2014-03-23/disjoint_set_representation.png)
 <p class="caption">An example of {A, B, C, D} at after the second merge. Only {A, B, C} and {D} remain.</p>
@@ -72,7 +72,6 @@ def Subsets( x ):
 </pre>
 
 The above Python implementation of disjoint-sets is very simple but it can nonetheless be directly applied to the agglomerative clustering problem. In which case we call MakeSets( 𝐂 ) in step 1 and Union( x₁, x₂ ) in lieu of steps 2.2 and 2.3 of the original algorithm.
-
 
 More efficient disjoint-set implementations introduce optimisations such as path compression, which speeds up the Find operation by reducing the height of the tree. This leads to an [amortised complexity of Ο(log₂n)](http://en.wikipedia.org/wiki/Proof_of_O%28log*n%29_time_complexity_of_union%E2%80%93find). To take advantage of these performance gains, I ended up using an [existing disjoint-set implementation](http://code.activestate.com/recipes/577225-union-find/) by Ahmed El Deeb for my project.
 
