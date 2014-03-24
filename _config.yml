@@ -72,9 +72,9 @@ JB :
   # Set 'provider' to false to turn commenting off globally.
   #
   comments:
-    provider: disqus 
+    provider:
     disqus:
-      short_name: chrisblag
+      short_name:
     livefyre:
       site_id: 123
     intensedebate:
