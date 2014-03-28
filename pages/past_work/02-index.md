@@ -33,7 +33,7 @@ Homepage for the 2011-12 Coalition Deregulation Taskforce. Uses a custom Wordpre
 
 ![Coalition Deregulation Taskforce](preview_dereg_taskforce.png)
 
-## Australian Women's Debating Competition
+## Australasian Women's Debating Competition
 
 Homepage for the 2011 Australian Women's Debating Competition, which was being hosted by the Melbourne University Debating Society. Custom Wordpress theme.
 
