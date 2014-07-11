@@ -7,7 +7,7 @@ tags: []
 ---
 {% include JB/setup %}
 
-As my original introduction to data structures was in the context of C/C++, it's been interesting recently to see how these translate into a more concise, magical language such as Python. A classic example of it making life easier is in DFS path finding.
+As my original introduction to data structures was in the context of C/C++, it's been interesting recently to see how these translate into a more concise, magical language such as Python. DFS path finding provides a classic example of it making life easier.
 
 A recursive algorithm to find a path between two vertices, as in almost any other language, is trivial.
 
@@ -32,7 +32,7 @@ for i in self.find_path( v, y, path ): # ugh
     yield i
 </pre>
 
-Thankfully [PEP 380 -- Syntax for Delegating to a Subgenerator](http://legacy.python.org/dev/peps/pep-0380/) comes to the rescue by allowing us to pretend yields from the sub generator originated in the calling function.
+Thankfully [PEP 380 -- Syntax for Delegating to a Subgenerator](http://legacy.python.org/dev/peps/pep-0380/) comes to the rescue, allowing us to treat all yields as originating in the callee.
 
 <pre>
 def find_paths( self, x, y, path = [] ):
