@@ -14,8 +14,8 @@ A recursive algorithm to find a path between two vertices, as in almost any othe
 <pre>
 def find_path( self, x, y, path = [] ):
     path.append( x )
-        if x == y:
-            return path
+    if x == y:
+        return path
     for v in self.vertices[ x ]:
         if v in path:
             continue
