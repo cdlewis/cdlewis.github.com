@@ -184,12 +184,10 @@ section#river {
 header#sidebar {
 	position:fixed;
 	width:26%;
-	padding-left:3%;
-	padding-top:30px;z-index:1
+    z-index:1
 }
 header#sidebar h2,header#sidebar h1 {
 	margin:0;
-	padding:0;
 	font-weight:900;
 	color:#000;
 	font-family:'freight-sans-pro','helvetica',sans-serif
@@ -324,9 +322,6 @@ section.preview header#begin a.live_link{border-bottom:1px solid #ccc}
 section.preview header#begin h4{margin-top:10px;font-weight:normal;font-size:16px;width:auto;min-width:0;max-width:80%}
 h2.page_title{margin-left:40px;color:#000;font-size:40px;font-weight:900;margin-bottom:50px}
 .bleed,span.bleed,div.bleed,p.bleed,img.bleed{margin-left:-50px;display:block}#svbtle_linkback{position:fixed;left:20px;bottom:20px;font-size:17px;letter-spacing:0;text-transform:uppercase;font-family:"freight-sans-pro",sans-serif;font-weight:900;line-height:19px;background-color:#fff;padding:10px;height:30px;z-index:0;border-radius:5px;color:#000}
-span.logo_square{position:relative;background-color:#000;display:inline-block;border-radius:50%;width:32px;height:32px;margin-right:3px}
-span.logo_circle{position:relative;border:2px solid #fff;border-radius:50%;display:block;width:20px;height:20px;margin:0 auto;margin-top:4px;text-indent:-9999px}
-
 /* Footer */
 
 nav.pagination { 
@@ -386,42 +381,14 @@ p.legal a {
 }
 
 /* Logo */
-
-figure.logo {
-	display: block;
-	position: relative;
-	background-color: #000;
-	border-radius: 50%;
-	-moz-border-radius: 50%;
-	-webkit-border-radius: 50%;
-	z-index: 1;
-	width: 90px;
-	height: 90px
+header .logo, header h1, header #user_nav, header #social_icons {
+    padding-left: 30px;
+    padding-right: 30px;
 }
-figure.logo a {
-	display: block;
-	position: absolute;
-	top: 6px;
-	left: 6px;
-	width: 70px;
-	height: 70px;
-	border-radius: 50%;
-	-moz-border-radius: 50%;
-	-webkit-border-radius: 50%;
-	text-indent:-9999px;
-	border: 4px solid #fff;
-	background-size: 100%
-}
-figure.logo.medium{
-	width: 140px;
-	height:140px
-}
-figure.logo.medium a {
-	border-width: 5px;
-	width: 114px;
-	height: 114px;
-	top: 8px;
-	left:8px
+figure.logo img {
+    padding-top: 25px;
+    max-width: 200px;
+    width: 100%;
 }
 
 /* Responsive Stuff */
@@ -432,10 +399,6 @@ figure.logo.medium a {
 }
 
 @media all and (min-width:750px) and (max-width:900px) {
-	figure.logo.medium {
-		width: 120px;
-		height: 120px
-	}
 	figure.logo.medium a {
 		border-width: 5px;
 		width: 95px;
@@ -462,10 +425,6 @@ figure.logo.medium a {
 	pre {
 		font-size: 17px;
 	}
-	header#sidebar figure.logo {
-		width: 200px;
-		height: 200px
-	}
 	header#sidebar figure.logo a {
 		top: 10px;
 		left: 10px;
@@ -487,7 +446,16 @@ figure.logo.medium a {
 	
 	/* Sidebar */
 
-	header#sidebar{display:block;position:relative;min-height:0;width:100%;max-width:100%;padding:0;margin:0;float:none;text-align:center}
+	header#sidebar{
+        display:block;
+        position:relative;
+        min-height:0;
+        width:100%;
+        max-width:100%;
+        margin:0;
+        float:none;
+        text-align:center
+    }
 	header#sidebar h1,header#sidebar h2,header#sidebar h3{max-width:70%;width:auto;margin:0 auto}
 	header#sidebar h2{margin-top:2px}
 	header#sidebar h1{margin-top:5px}
@@ -606,10 +574,6 @@ figure.logo.medium a {
 }
 
 @media only all and (min-width:1150px) {
-	header#sidebar figure.logo {
-		width: 200px;
-		height: 200px
-	}
 	header#sidebar figure.logo a {
 		top: 10px;
 		left: 10px;

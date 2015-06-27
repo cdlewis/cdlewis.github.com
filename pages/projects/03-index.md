@@ -9,6 +9,12 @@ permalink: /pages/projects/
 
 Some of the things I've made over the years are in a usable state and still online. You can find them here!
 
+## [Sudoku Solver](https://itunes.apple.com/US/app/id963980466?mt=8)
+
+Solvr is an iOS app written in Objective-C (with some help from OpenCV/Tesseract) that uses the device's camera and [Norvig's](http://norvig.com/sudoku.html) constraint propogation approach to solve any sudoku at the push of a button.
+
+[![Solvr](solvr.jpg)](https://itunes.apple.com/US/app/id963980466?mt=8)
+
 ## [Countdown](http://chrislewis.com.au/Countdown)
 Simple countdown timer, written in Javascript. Stores state in the URL. Option to play a specific youtube video at the end of the countdown.
 
