@@ -23,7 +23,7 @@ def find_path( self, x, y, path = [] ):
             return self.find_path( v, y, path )
 </pre>
 
-But trying to generalize this algorithm to find all paths requires the addition of a 'paths' variable outside the scope of our beautiful recursive function. Instead of returning the path, we'd do something like paths.append( path ).
+But trying to generalise this algorithm to find all paths requires the addition of a 'paths' variable outside the scope of our beautiful recursive function. Instead of returning the path, we'd do something like paths.append( path ).
 
 A neat way to circumvent this problem would be to turn the function into a generator and yield valid paths to the caller. However recursion throws a spanner in the works as a generator expression only yields to its immediate caller. So we'd have to loop over the recursive call and yield the yields.
 
