@@ -11,7 +11,7 @@ Some of the things I've made over the years are in a usable state and still onli
 
 ## [Sudoku Solver](https://itunes.apple.com/US/app/id963980466?mt=8)
 
-Solvr is an iOS app written in Objective-C (with some help from OpenCV/Tesseract) that uses the device's camera and [Norvig's](http://norvig.com/sudoku.html) constraint propogation approach to solve any sudoku at the push of a button.
+Solvr is an iOS app written in Objective C++ (with some help from OpenCV/Tesseract) that uses the device's camera and [Norvig's](http://norvig.com/sudoku.html) constraint propogation approach to solve any sudoku at the push of a button. The source is [available on Github](https://github.com/cdlewis/Solvr).
 
 [![Solvr](solvr.jpg)](https://itunes.apple.com/US/app/id963980466?mt=8)
 
