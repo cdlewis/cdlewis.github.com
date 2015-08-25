@@ -5,13 +5,12 @@ description: "Application of disjoint sets to agglomerative  clustering."
 category: 
 tags: [algorithms]
 ---
-{% include JB/setup %}
 
 As part of an exercise I recently to implemented agglomerative clustering for a small set of news articles. After fiddling around for a while it occurred to me that the solution would be much more elegant if cluster membership was tracked with a disjoint-set. In fact it turns out that the data structure is [quite commonly](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-design-and-analysis-of-algorithms-spring-2012/lecture-notes/MIT6_046JS12_lec21.pdf) used to solve this particular problem.
 
 Agglomerative clustering is a hierarchical clustering method that starts from the 'bottom up'. Each element initially forms its own cluster, with the nearest two clusters being progressively merged until only one remains.
 
-![example cluster](/images/2014-03-23/clusters.png)
+![example cluster](assets/images/2014-03-23/clusters.png)
 <p class="caption">One potential clustering of {A, B, C, D},  represented as a binary tree. Each level is a stage in the clustering process. Elements are missing from a level in the tree when their cluster is unchanged.</p>
 
 This could be more formally expressed as:
@@ -37,7 +36,7 @@ Because of the importance of Union( x, y ) and Find( x ), disjoint-sets are some
 
 Disjoint-sets, like the initial hash table approach, can be implemented as a mapping of element → subset. A particular subset is uniquely identified by the root element in the tree representing that subset. And an element is a root element if it is its own parent.
 
-![disjoint set representation](/images/2014-03-23/disjoint_set_representation.png)
+![disjoint set representation](assets/images/2014-03-23/disjoint_set_representation.png)
 <p class="caption">An example of {A, B, C, D} at after the second merge. Only {A, B, C} and {D} remain.</p>
 
 In a neat bit of symmetry with bottom-up clustering, disjoint-sets are initialised by calling Make-Set on each element.

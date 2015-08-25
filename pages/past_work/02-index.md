@@ -5,7 +5,6 @@ description: "My portfolio."
 group: navigation
 permalink: /pages/past_work/
 ---
-{% include JB/setup %}
 
 ## [Projects at IMGE/MGA](http://www.mgofa.com)
 

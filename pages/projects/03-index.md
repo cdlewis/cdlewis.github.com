@@ -5,7 +5,6 @@ description: "Miscellaneous collection of old code."
 group: navigation
 permalink: /pages/projects/
 ---
-{% include JB/setup %}
 
 Some of the things I've made over the years are in a usable state and still online. You can find them here!
 

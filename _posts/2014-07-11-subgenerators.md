@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: []
 ---
-{% include JB/setup %}
 
 As my original introduction to data structures was in the context of C/C++, it's been interesting recently to see how these translate into a more concise, magical language such as Python. DFS path finding provides a classic example of it making life easier.
 

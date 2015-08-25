@@ -2,7 +2,7 @@
 layout: default
 title: Chris' Blag
 ---
-{% assign first = true %}{% include JB/setup %}{% for post in paginator.posts %}
+{% assign first = true %}{% for post in paginator.posts %}
 <header id="begin">
 	{% if first == true %}{% assign first = false %}<time datetime="{{ post.date }}" id="top_time">{{ post.date | date: "%d %B %Y" }}</time>{% endif %}
 </header>
