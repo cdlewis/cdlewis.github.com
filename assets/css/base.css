@@ -649,18 +649,8 @@ table tr:nth-child(even){background:#eee}
 article.post { overflow: visible }
 
 /* Responsive Images */
-
 section#river article p img, section#river article p iframe, section#river article p object { height:auto; }
 
-/* Some selection styling, colour is defined in default.html */
-
-::selection {
-    text-shadow: none;
-    background-color: #356AA0 !important;
-}
 blockquote {
     border-left-color: #356AA0;
-}
-::-moz-selection {
-    background-color: #356AA0 !important;
 }
