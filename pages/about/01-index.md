@@ -8,7 +8,7 @@ permalink: /pages/about/
 
 <style type="text/css">
 .about_me_image {
-    max-width: 300px;
+    max-width: 240px;
     border-radius: 2px;
     margin: 0;
 }
