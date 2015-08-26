@@ -8,7 +8,7 @@ permalink: /pages/past_work/
 
 ## [Projects at IMGE/MGA](http://www.mgofa.com)
 
-I've had the opportunity to work  on a lot of cool projects with some really talented people during my time at IMGE and MGA.
+I've had the opportunity to work  on a lot of cool projects with some really talented people during my time at IMGE and MGA. If this sounds like something you'd be interested in doing, [we're always hiring](http://http://mgofa.com/careers/).
 
 'Create Your Own $10' was in response to reports that a women would be featured on the new $10 bill. It runs on NodeJS/Express and uses Amazon S3 to store the images.
 
