@@ -29,7 +29,7 @@ body {
     margin: 0;
     font-size: 1em;
     line-height: 1.4;
-    @media( max-width: $responsive_start ) {
+    @media all and ( max-width: $responsive_start ) {
         padding-top: 47px;
     }
 }
@@ -262,7 +262,7 @@ article {
         border-top: 1px solid #e2e2e2;
         min-height: 130px;
         overflow-x: hidden;
-        @media( max-width: $responsive_start ) {
+        @media all and ( max-width: $responsive_start ) {
             border-top: none;
         }
         ul {
@@ -505,7 +505,7 @@ header#sidebar {
             }
         }
         li {
-            @media( max-width: $responsive_start ) {
+            @media all and ( max-width: $responsive_start ) {
                 display: block;
                 a {
                     display: block;
@@ -525,7 +525,7 @@ header#sidebar {
                 }
             }
         }
-        @media( max-width: $responsive_start ) {
+        @media all and ( max-width: $responsive_start ) {
             margin-top: 0px;
             float: right;
             width: 100%;
@@ -555,6 +555,7 @@ header#sidebar {
             margin-bottom: 0px;
             border-top: 1px solid #e2e2e2;
             border-bottom: 1px solid #e2e2e2;
+            cursor: default;
             a {
                 padding: 10px;
             }
