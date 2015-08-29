@@ -1,6 +1,7 @@
 @import 'fixes.css';
 @import 'prettify.css';
 
+$responsive_start: 750px;
 $lt_grey: #585858;
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
@@ -28,7 +29,7 @@ body {
     margin: 0;
     font-size: 1em;
     line-height: 1.4;
-    @media( max-width: 750px ) {
+    @media( max-width: $responsive_start ) {
         padding-top: 47px;
     }
 }
@@ -253,6 +254,22 @@ article {
         }
     }
     &.post {
+        display: block;
+        position: relative;
+        padding-left: 50px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        border-top: 1px solid #e2e2e2;
+        min-height: 130px;
+        overflow-x: hidden;
+        @media( max-width: $responsive_start ) {
+            border-top: none;
+        }
+        ul {
+            max-width: auto;
+            min-width: 0;
+            padding-right: 10px;
+        }
         h2 a {
             color: #000;
             text-decoration: none;
@@ -387,11 +404,11 @@ header#sidebar {
         top: -2px;
         position: relative;
         color: $lt_grey !important;
-        @media( max-width: 750px ) {
+        @media( max-width: $responsive_start ) {
             display: block;
         }
     }
-    @media all and ( max-width: 750px ) {
+    @media all and ( max-width: $responsive_start ) {
         display: block;
         position: fixed;
         top: 0px;
@@ -471,7 +488,7 @@ header#sidebar {
             }
         }
         li {
-            @media( max-width: 750px ) {
+            @media( max-width: $responsive_start ) {
                 display: block;
                 a {
                     display: block;
@@ -479,17 +496,19 @@ header#sidebar {
                     position: relative;
                     margin: 0;
                     padding: 10px;
-                    border-top: 1px solid #e2e2e2;
                     border-radius: 0px;
                     margin-left: -10px;
                     margin-right: -10px;
-                    &:hover {
-                        border-top: 1px solid #e2e2e2;
+                    &, &:hover, &.active {
+                        border-top: 1px solid #e2e2e2 !important;
                     }
+                }
+                &.active {
+                    border-top: none;
                 }
             }
         }
-        @media( max-width: 750px ) {
+        @media( max-width: $responsive_start ) {
             margin-top: 0px;
             float: right;
             width: 100%;
@@ -517,7 +536,7 @@ header#sidebar {
             color: black;
             cursor: pointer;
         }
-        @media all and ( max-width: 750px ) {
+        @media all and ( max-width: $responsive_start ) {
         	position: relative;
             margin-bottom: 0px;
             border-top: 1px solid #e2e2e2;
@@ -545,7 +564,7 @@ header#begin time {
 }
 
 a.contents{background:url(/cargo/icons/list_icon.png) center center no-repeat;background-size:100%;width:25px;height:25px;text-indent:-9999px;display:block;float:right;margin-right:50px;z-index:20;position:relative;opacity:.01;margin-top:-10px}a.contents:hover{opacity:1}
-a.contents.articles{background:url(/cargo/icons/articles_icon.png) center center no-repeat}article.post{display:block;position:relative;padding-left:50px;padding-top:40px;padding-bottom:40px;border-top:1px solid #e2e2e2;min-height:130px;overflow-x:hidden}
+a.contents.articles{background:url(/cargo/icons/articles_icon.png) center center no-repeat}
 aside.read_next{width:auto;display:block;position:relative;padding-top:50px;padding-left:50px;padding-bottom:50px;border-top:1px solid #e3e3e3}
 aside.read_next a{display:block}
 aside.read_next h4{font-size:14px;font-family:"freight-sans-pro",sans-serif;font-weight:900;text-transform:uppercase;color:#ababab;margin:0;margin-bottom:5px}
@@ -619,7 +638,7 @@ figure.logo img {
 
 /* Responsive Stuff */
 
-@media all and (min-width:750px) and (max-width:900px) {
+@media all and ( min-width: $responsive_start ) and (max-width:900px) {
 	figure.logo.medium a {
 		border-width: 5px;
 		width: 95px;
@@ -654,7 +673,7 @@ figure.logo img {
 }
 
 /* Sidebar */
-@media all and (max-width:750px) {
+@media all and ( max-width: $responsive_start ) {
 	section#river {
 		margin-left: 0;
 		border-left: none;
@@ -716,12 +735,10 @@ figure.logo img {
 	article blockquote pre code{margin:0;width:80%;padding-left:20px;padding-top:20px;padding-bottom:20px;border-right:1px solid #ccc;border-top-right-radius:5px;border-bottom-right-radius:5px}
 	article ul,article ol{margin-left:50px;padding-left:0}
 	article ul p,article ol p{padding-left:0}
-	article.post ul{max-width:auto;min-width:0;padding-right:10px}
 	nav.pagination{padding-left:10px;padding-right:10px}
 }
 
 @media all and (max-width:620px) {
-	section#river article.post h2 a { font-size: 24px }
 	article img { width: 100% }
 	section#river article p img,section#river article p iframe,section#river article iframe,section#river article p object,section#river video,section#river article p video {
 		display: block;

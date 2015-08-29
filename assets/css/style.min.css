@@ -373,36 +373,52 @@ article blockquote {
     article blockquote p:last-child {
       margin-bottom: 0;
       padding-bottom: 0; }
-article.post h2 a {
-  color: #000;
-  text-decoration: none;
-  border-bottom: 1px solid #CCC;
-  font-family: "freight-sans-pro", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 28px;
-  -webkit-font-smoothing: antialiased; }
-article.post h2.entry-title a {
-  border-bottom: none; }
-article.post ul {
-  list-style-type: disc;
-  max-width: 470px; }
-article.post ul li, article.post ol li {
-  font-size: 15px;
-  line-height: 25px;
-  margin: 0;
-  color: #4d4d4d;
-  display: list-item;
-  margin-bottom: 5px;
-  margin-top: 5px; }
-article.post ol {
-  max-width: 470px; }
-article.post blockquote p {
-  max-width: 500px; }
-article.post blockquote blockquote p {
-  max-width: 400px; }
-article.post blockquote blockquote blockquote p {
-  max-width: 380px; }
+article.post {
+  display: block;
+  position: relative;
+  padding-left: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-top: 1px solid #e2e2e2;
+  min-height: 130px;
+  overflow-x: hidden; }
+  @media (max-width: 750px) {
+    article.post {
+      border-top: none; } }
+  article.post ul {
+    max-width: auto;
+    min-width: 0;
+    padding-right: 10px; }
+  article.post h2 a {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #CCC;
+    font-family: "freight-sans-pro", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    -webkit-font-smoothing: antialiased; }
+  article.post h2.entry-title a {
+    border-bottom: none; }
+  article.post ul {
+    list-style-type: disc;
+    max-width: 470px; }
+  article.post ul li, article.post ol li {
+    font-size: 15px;
+    line-height: 25px;
+    margin: 0;
+    color: #4d4d4d;
+    display: list-item;
+    margin-bottom: 5px;
+    margin-top: 5px; }
+  article.post ol {
+    max-width: 470px; }
+  article.post blockquote p {
+    max-width: 500px; }
+  article.post blockquote blockquote p {
+    max-width: 400px; }
+  article.post blockquote blockquote blockquote p {
+    max-width: 380px; }
 
 hr {
   border: solid #f4f3f3;
@@ -663,12 +679,13 @@ header#sidebar {
           position: relative;
           margin: 0;
           padding: 10px;
-          border-top: 1px solid #e2e2e2;
           border-radius: 0px;
           margin-left: -10px;
           margin-right: -10px; }
-          header#sidebar ul#user_nav li a:hover {
-            border-top: 1px solid #e2e2e2; } }
+          header#sidebar ul#user_nav li a, header#sidebar ul#user_nav li a:hover, header#sidebar ul#user_nav li a.active {
+            border-top: 1px solid #e2e2e2 !important; }
+        header#sidebar ul#user_nav li.active {
+          border-top: none; } }
     @media (max-width: 750px) {
       header#sidebar ul#user_nav {
         margin-top: 0px;
@@ -739,16 +756,6 @@ a.contents:hover {
 
 a.contents.articles {
   background: url(/cargo/icons/articles_icon.png) center center no-repeat; }
-
-article.post {
-  display: block;
-  position: relative;
-  padding-left: 50px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  border-top: 1px solid #e2e2e2;
-  min-height: 130px;
-  overflow-x: hidden; }
 
 aside.read_next {
   width: auto;
@@ -1093,18 +1100,10 @@ figure.logo img {
   article ul p, article ol p {
     padding-left: 0; }
 
-  article.post ul {
-    max-width: auto;
-    min-width: 0;
-    padding-right: 10px; }
-
   nav.pagination {
     padding-left: 10px;
     padding-right: 10px; } }
 @media all and (max-width: 620px) {
-  section#river article.post h2 a {
-    font-size: 24px; }
-
   article img {
     width: 100%; }
 
