@@ -605,7 +605,9 @@ header#sidebar {
     position: relative;
     color: #585858 !important; }
     header#sidebar #mobile_menu i {
-      transition: transform, -webkit-transform 0.1s linear; }
+      -webkit-transition: -webkit-transform 0.1s linear;
+      -ms-transition: -ms-transform 0.1s linear;
+      transition: transform 0.1s linear; }
     @media all and (max-width: 750px) {
       header#sidebar #mobile_menu {
         display: block; } }
