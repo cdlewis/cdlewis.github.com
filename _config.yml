@@ -4,6 +4,7 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 relative_permalinks: false
 paginate: 5
 title: Chris Lewis
+production_url: http://www.chrislewis.com.au
 author:
   name: Chris Lewis
   email: chris.lewis2@gmail.com
