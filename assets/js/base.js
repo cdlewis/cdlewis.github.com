@@ -1,5 +1,9 @@
 
 jQuery( document ).ready( function( $ ) {
+    $( '#mobile_menu' ).click( function( event ) {
+        event.preventDefault();
+        $( '#user_nav' ).toggleClass( 'active' );
+    } );
     $( 'pre' ).addClass( 'prettyprint' );
     prettyPrint();
 
