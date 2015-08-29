@@ -1,10 +1,11 @@
+version: 1
 permalink: /:categories/:year/:month/:day/:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 relative_permalinks: false
 paginate: 5
-title : Chris Lewis
-author :
-  name : Chris Lewis
-  email : chris.lewis2@gmail.com
-  github : cdlewis
-  twitter : chrislewis_aus
+title: Chris Lewis
+author:
+  name: Chris Lewis
+  email: chris.lewis2@gmail.com
+  github: cdlewis
+  twitter: chrislewis_aus
