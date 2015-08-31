@@ -5,8 +5,13 @@ relative_permalinks: false
 paginate: 5
 title: Chris Lewis
 production_url: http://www.chrislewis.com.au
+markdown: kramdown
+kramdown:
+    coderay:
+        coderay_line_numbers: nil
+        coderay_default_lang: python
 author:
-  name: Chris Lewis
-  email: chris.lewis2@gmail.com
-  github: cdlewis
-  twitter: chrislewis_aus
+    name: Chris Lewis
+    email: chris.lewis2@gmail.com
+    github: cdlewis
+    twitter: chrislewis_aus
