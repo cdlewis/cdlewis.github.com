@@ -1,1 +1,24 @@
-{% assign sorted_pages = site.pages | sort:"name" %}{% comment %}endl;{% endcomment%}{% for node in sorted_pages %}{% comment %}endl;{% endcomment%}{% if group == nil or group == node.group %}{% comment %}endl;{% endcomment%}{% if page.url == node.url %}{% comment %}endl;{% endcomment%}{% assign link_class = ' class="active"' %}{% comment %}endl;{% endcomment%}{% endif %}{% comment %}endl;{% endcomment%}<li{{ link_class }}><a href="{{ BASE_PATH }}{{ node.url }}"{{ link_class }}>{{ node.title }}</a></li>{% comment %}endl;{% endcomment%}{% assign link_class = nil %}{% comment %}endl;{% endcomment%}{% endif %}{% comment %}endl;{% endcomment%}{% endfor %}{% comment %}endl;{% endcomment%}{% assign pages_list = nil %}{% comment %}endl;{% endcomment%}{% assign group = nil %}{% comment %}endl;{% endcomment%}
+{% assign sorted_pages = site.pages | sort:"name" %}
+{% comment %}endl;{% endcomment%}
+{% for node in sorted_pages %}
+    {% comment %}endl;{% endcomment%}
+    {% if group == nil or group == node.group %}
+        {% comment %}endl;{% endcomment%}
+        {% if page.url == node.url %}
+            {% comment %}endl;{% endcomment%}
+            {% assign link_class = ' class="active"' %}
+            {% comment %}endl;{% endcomment%}
+        {% endif %}
+        {% comment %}endl;{% endcomment%}
+        <li{{ link_class }}><a href="{{ BASE_PATH }}{{ node.url }}"{{ link_class }}>{{ node.title }}</a></li>
+        {% comment %}endl;{% endcomment%}
+        {% assign link_class = nil %}
+        {% comment %}endl;{% endcomment%}
+    {% endif %}
+    {% comment %}endl;{% endcomment%}
+{% endfor %}
+{% comment %}endl;{% endcomment%}
+{% assign pages_list = nil %}
+{% comment %}endl;{% endcomment%}
+{% assign group = nil %}
+{% comment %}endl;{% endcomment%}

@@ -1,23 +1,27 @@
+$full_screen: 992px;
 $responsive_start: 750px;
+$mobile_start: 500px;
 $lt_grey: #585858;
+$body_font: "PT Sans", "Helvetica" sans-serif;
+$header_font: "Roboto", "Helvetica" sans-serif;
+
 
 html {
     font-size: 100%;
     -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%
-}
-
-html, button, input, select, textarea {
-    font-family: sans-serif;
-    color: #222
-}
-
-body {
-    margin: 0;
-    font-size: 1em;
-    line-height: 1.4;
-    @media all and ( max-width: $responsive_start ) {
-        padding-top: 47px;
+    -ms-text-size-adjust: 100%;
+    font-family: $body_font;
+    color: #222;
+    body {
+        margin: 0;
+        font-size: 1em;
+        line-height: 1.4;
+        @media all and ( max-width: $responsive_start ) {
+            padding-top: 47px;
+        }
+        h1, h2, h3 {
+            font-family: $header_font;
+        }
     }
 }
 
@@ -83,7 +87,7 @@ figure {
 
 body {
 	background-color: #fff;
-	font-family: 'PT Sans', 'Helvetica', sans-serif;
+	font-family: $body_font;
 	font-weight: 400
 }
 
@@ -120,13 +124,13 @@ a:link, a:visited, a:hover, a:active {
 
 article {
     h1, h2, h3, h4, h5, h6, p, blockquote {
-        max-width: 550px;
-        padding-right: 100px;
+        max-width: 600px;
     }
     h2 {
+        margin-top: 0px;
         a.no-link {
             border: none;
-            font-size:28px
+            font-size: 28px
         }
         a.anchor {
             border-bottom: 0;
@@ -136,9 +140,9 @@ article {
     a {
         text-decoration: none;
         border-bottom: 1px solid #ccc;
-        color: #000
+        color: black;
     }
-    p.caption {
+    .caption {
     	font-size: 80% !important;
     	text-align: center;
     	font-style: italic;
@@ -183,9 +187,7 @@ article {
     &.post {
         display: block;
         position: relative;
-        padding-left: 50px;
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding: 40px;
         border-top: 1px solid #e2e2e2;
         min-height: 130px;
         overflow-x: hidden;
@@ -201,11 +203,14 @@ article {
             color: #000;
             text-decoration: none;
             border-bottom: 1px solid #CCC;
-            font-family: "freight-sans-pro", sans-serif;
+            font-family: $header_font;
             font-weight: 700;
-            font-size: 20px;
+            font-size: 25px;
             line-height: 28px;
             -webkit-font-smoothing: antialiased
+        }
+        h2 {
+            font-size: 20px;
         }
         h2.entry-title a {
             border-bottom: none;
@@ -271,7 +276,7 @@ header#sidebar {
         margin:0;
         font-weight:900;
         color: #585858;
-        font-family: 'freight-sans-pro', 'helvetica', sans-serif;
+        font-family: $header_font;
         width:75%;
         a {
             color: #585858 !important;
@@ -279,7 +284,7 @@ header#sidebar {
     }
     h1 {
         margin-top: 30px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         font-size: 30px;
         font-weight: bold;
         line-height: 30px;
@@ -311,6 +316,9 @@ header#sidebar {
         @media all and ( max-width: $responsive_start ) {
             #user_nav {
                 max-height: 50vh;
+                li:hover, li.active {
+                    background-color: rgba(226, 226, 226, 0.93);
+                }
             }
             #mobile_menu i {
                 -webkit-transform: rotate( 90deg );
@@ -396,22 +404,13 @@ header#sidebar {
         transition: max-height 0.4s ease-in-out;
         overflow: hidden;
         li a, .nav_button {
-        	position: relative;
-        	display: inline-block;
-        	font-size: 15px;
-        	line-height: 14px;
-        	border: 4px solid #f8f8f8;
-        	border-radius: 20px;
-        	-moz-border-radius: 20px;
-        	-webkit-border-radius: 20px;
-        	z-index: 5;
-        	padding: 7px;
-        	padding-left: 15px;
-        	padding-right: 15px;
-        	color: $lt_grey;
-        	font-weight: 600;
-        	background-color: #fff;
-        	letter-spacing: 1px;
+            display: inline-block;
+            font-size: 17px;
+            -moz-border-radius: 20px;
+            color: $lt_grey;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 17px;
             &:hover {
                 color: #000;
                 border-color: #000;
@@ -476,6 +475,11 @@ header#sidebar {
             }
         }
     }
+    @media all and ( min-width: $full_screen ) {
+        h1, #user_nav {
+            margin-left: 28px;
+        }
+    }
 }
 
 header#begin {
@@ -489,7 +493,7 @@ section#river > header:first-child {
 
 header#begin time {
 	display: block;
-	font-family: "freight-sans-pro",sans-serif;
+	font-family: $body_font;
 	position: relative;
 	text-transform: uppercase;
 	color: #000;
@@ -585,7 +589,7 @@ header#sidebar figure.logo a {
 	width: 170px;
 	height:170px
 }
-section article.post p,section article.post li {
+section article.post p, section article.post li {
 	font-size: 17px;
 	line-height:27px
 }
@@ -626,7 +630,10 @@ section article.post p,section article.post li {
     		padding-right:0
     	}
     	&.post {
-    		padding: 10px 60px 60px 60px;
+    		padding: 60px;
+            @media all and ( max-width: $responsive_start ) {
+                padding: 15px;
+            }
     	}
     	hr {
     		width: 80%;
@@ -649,54 +656,26 @@ section article.post p,section article.post li {
     }
 }
 
-@media all and (max-width:620px) {
-	article img { width: 100% }
-	article iframe,article object {
-		min-height: 250px;
-		min-width:0
-	}
-	.bleed, span.bleed, div.bleed, p.bleed, img.bleed {
-		margin-left: 0;
-		margin-right: 0;
-		width: 100%;
-		padding: 0;
-		margin: 0
-	}
+@media all and ( max-width: $responsive_start ) {
+    article {
+        padding: 15px;
+        img {
+            width: 100%;
+        }
+    	iframe, object {
+    		min-height: 250px;
+    		min-width: 0;
+    	}
+    }
 }
 
-@media all and (max-width:560px) {
-	article.post {
-		padding: 0px 15px 20px 15px;
-	}
-	aside.read_next {
-		display: block;
-		position: relative;
-		width: auto;
-		padding-left: 15px
-	}
-	aside.read_next h3 { max-width: 80% }
-}
-
-@media only all and (min-width:1150px) {
-	section article.post p,section article.post li {
-		font-size: 17px;
-		line-height: 27px
-	}
-}
-
-@media all and ( device-width: $responsive_start ) {
+@media all and ( max-width: $responsive_start ) {
     header#sidebar {
         padding-bottom: 10px;
+        &.menu_active {
+            padding-bottom: 5px;
+        }
     }
-    header#sidebar.menu_active {
-        padding-bottom: 5px;
-    }
-	section#river {
-		position: absolute;
-		right: 0;
-		left: 200px;
-		margin-left: 0
-	}
 }
 
 article.post {
@@ -705,6 +684,7 @@ article.post {
 }
 
 /* Responsive Images */
+
 section#river article p img, section#river article p iframe, section#river article p object {
     height: auto;
 }
@@ -730,10 +710,16 @@ header#sidebar h3 {
     margin-bottom: 12px !important;
 }
 .code {
-    overflow-x: scroll;
     pre {
+        font-size: 15px;
         .line-numbers {
             display: none;
+        }
+        @media( max-width: $responsive_start ) {
+            overflow-x: scroll;
+        }
+        @media all and ( max-width: $mobile_start ) {
+            font-size: 12px;
         }
     }
 }
