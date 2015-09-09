@@ -58,7 +58,7 @@ The reasons for using human DNA as a test dataset go beyond its conveniently sma
 
 The human genome can be downloaded [here](http://hgdownload-test.cse.ucsc.edu/goldenPath/hg38/bigZips). You'll also need a [twobitreader](https://pypi.python.org/pypi/twobitreader) to parse it. Even a single chromosome can take up *a lot* of memory so the code below processes it in chunks of one million nucleotides. Since KMP doesn't backtrack, each nucleotide can be read once and thrown away.
 
-``` python
+```python
 def chromosone(number, buffer_size=1000000):
     genome = twobitreader.TwoBitFile('hg38.2bit')
     chromosome = genome['chr%d' % number]

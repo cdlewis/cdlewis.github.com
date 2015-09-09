@@ -6,6 +6,9 @@ paginate: 5
 title: Chris Lewis
 production_url: http://www.chrislewis.com.au
 markdown: kramdown
+kramdown:
+    input: GFM
+highlighter: pygments
 author:
     name: Chris Lewis
     email: chris.lewis2@gmail.com
