@@ -14,7 +14,7 @@ Agglomerative clustering is a hierarchical clustering method that starts from th
 One potential clustering of {A, B, C, D},  represented as a binary tree. Each level is a stage in the clustering process. Elements are missing from a level in the tree when their cluster is unchanged.
 {: .caption}
 
-This could be more formally expressed as:oo
+This could be more formally expressed as:
 
 {% highlight html %}
 1. Let each element x in set 𝐂 be a singleton cluster

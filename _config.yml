@@ -1,4 +1,4 @@
-version: 1
+version: 2
 permalink: /:categories/:year/:month/:day/:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 relative_permalinks: false
