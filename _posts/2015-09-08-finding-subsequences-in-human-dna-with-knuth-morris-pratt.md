@@ -8,17 +8,17 @@ tags: [algorithms]
 
 Substring searching has become so ubiquitous in recent years that it's easy to take for granted the beauty and ingenuity of automata-based pattern matching. Remarkably, the importance of these algorithms has, if anything, continued to grow. Knuth-Morris-Pratt was published in 1974 but [Skiena’s ‘killer applications’ for string processing](http://www.algorithm.cs.sunysb.edu/computationalbiology/pdf/lecture8.pdf) — online search and computational biology — wouldn’t emerge until decades later.
 
-The key insight of KMP is that backtracking is unnecessary as each character only needs to be examined once. This reduces the algorithmic complexity from O(mn) in the naïve case to O(m+n). KMP achieves this by asking a slightly easier question: at any given point what is the longest prefix of the pattern that is also a suffix of the input string? If we encounter a point at which the prefix length is equal to the pattern length, we can reconstruct the matching substring.
+The key insight behind KMP is that it's never necessary to backtrack when searching the text. Examining each character once is enough. Consequently the algorithmic complexity is reduced from O(mn) in the naïve case to O(m+n). KMP achieves this by re-framing the problem. Rather than whether a substring exists, it asks: what currently is the longest prefix of the pattern that is also a suffix of the input string?  Substrings can then be detected by checking whether the prefix length is equal to the pattern length.
 
 ![dfa representing nucleotide pattern](/assets/images/2015-08-30/DFA.jpg)
-DFA representing the pattern 'ATGAT'. States indicate partial matches so, for example, being in state two indicates that the last two characters were 'AT'.
+A DFA representing the pattern 'ATGATC'. States indicate partial matches so, for example, being in state two indicates that the last two characters were 'AT'.
 {: .caption}
 
 The longest prefix is tracked in a deterministic finite automaton (DFA), created by pre-processing the pattern. Each state represents a particular partial match and the transition arrows indicate effect of new characters on the size of the match.
 
 ## Creating the DFA
 
-Most of the code for creating the DFA is pretty straightforward.   The one non-obvious step is calculating mismatch transitions. Logically, when a mismatch occurs we want to shift the index one character to the right and start again. This would mean resetting the DFA and giving it the string `pattern[1:state]` (since the pattern is matched against itself, it *is* the text). Doing this for each mismatch calculation would be expensive so instead we maintain a variable `x`, which is always the result of running the pattern 'shifted one position over' through the DFA.
+Most of the code for creating the DFA is straightforward. The one non-obvious step is calculating mismatch transitions. Logically, when a mismatch occurs we want to shift the index one character to the right and start again. This would mean resetting the DFA and giving it the string `pattern[1:state]` (since the pattern is matched against itself in the pre-processing stage, it *is* the text). Doing this for each mismatch calculation would be expensive so instead we maintain a variable `x`, which is always the result of running the pattern 'shifted one position over' through the DFA.
 
 {% highlight python %}
 def create_dfa(pattern, alphabet):
