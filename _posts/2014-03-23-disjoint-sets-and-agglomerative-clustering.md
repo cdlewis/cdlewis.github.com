@@ -14,15 +14,15 @@ Agglomerative clustering is a hierarchical clustering method that starts from th
 One potential clustering of {A, B, C, D},  represented as a binary tree. Each level is a stage in the clustering process. Elements are missing from a level in the tree when their cluster is unchanged.
 {: .caption}
 
-This could be more formally expressed as:
+This could be more formally expressed as:oo
 
-~~~ python
+{% highlight html %}
 1. Let each element x in set 𝐂 be a singleton cluster
 2. Until |𝐂| = 1:
 	2.1 Remove two most similar clusters (x₁, x₂)
 	2.2 Join to create new cluster (xₐ)
 	2.3 Insert xₐ into 𝐂
-~~~
+{% endhighlight %}
 
 Of course the main issue with this approach is efficiently finding similar clusters, which (optimistically) could take Ο(n²) time. But an important secondary issue relates to the need for a data structure to track cluster membership. A simple approach would be to use map element_id → cluster_id however this does not adequately handle the case where the two elements being merged are part of larger clusters, which would in turn also require merging.
 
@@ -44,34 +44,34 @@ An example of {A, B, C, D} at after the second merge. Only {A, B, C} and {D} rem
 
 In a neat bit of symmetry with bottom-up clustering, disjoint-sets are initialised by calling Make-Set on each element.
 
-~~~ python
+{% highlight python %}
 def MakeSets(x):
     return dict([(i, i) for i in x])
-~~~
+{% endhighlight %}
 
 To find the set to which a particular element belongs, we recursively look for the parent until we find a node that is its own parent.
 
-~~~ python
+{% highlight python %}
 def Find(x, parent):
     if parent[x] is x:
         return x
     else:
         return Find(parent[x], parent)
-~~~
+{% endhighlight %}
 
 To merge two existing elements, we simply find the parents of the two elements and change one to be the parent of the other.
 
-~~~ python
+{% highlight python %}
 def Union(x, y, parent):
     parent[Find(x, parent)] = Find(y, parent)
-~~~
+{% endhighlight %}
 
 We can even use some Python magic to find all subsets by grouping them according to their representative element.
 
-~~~ python
+{% highlight python %}
 def Subsets(x):
     return itertools.groupby(x, lambda i: Find(i, x))
-~~~
+{% endhighlight %}
 
 The above Python implementation of disjoint-sets is very simple but it can nonetheless be directly applied to the agglomerative clustering problem. In which case we call MakeSets(𝐂) in step 1 and Union(x₁, x₂) in lieu of steps 2.2 and 2.3 of the original algorithm.
 

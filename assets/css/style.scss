@@ -5,6 +5,7 @@ $lt_grey: #585858;
 $body_font: "PT Sans", "Helvetica" sans-serif;
 $header_font: "Roboto", "Helvetica" sans-serif;
 
+@import "highlight";
 
 html {
     font-size: 100%;
@@ -708,18 +709,4 @@ header#sidebar h3 {
 
 .page_item {
     margin-bottom: 12px !important;
-}
-.code {
-    pre {
-        font-size: 15px;
-        .line-numbers {
-            display: none;
-        }
-        @media( max-width: $responsive_start ) {
-            overflow-x: scroll;
-        }
-        @media all and ( max-width: $mobile_start ) {
-            font-size: 12px;
-        }
-    }
 }

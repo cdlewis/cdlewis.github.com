@@ -20,7 +20,7 @@ The longest prefix is tracked in a deterministic finite automaton (DFA), created
 
 Most of the code for creating the DFA is pretty straightforward.   The one non-obvious step is calculating mismatch transitions. Logically, when a mismatch occurs we want to shift the index one character to the right and start again. This would mean resetting the DFA and giving it the string `pattern[1:state]` (since the pattern is matched against itself, it *is* the text). Doing this for each mismatch calculation would be expensive so instead we maintain a variable `x`, which is always the result of running the pattern 'shifted one position over' through the DFA.
 
-~~~ python
+{% highlight python %}
 def create_dfa(pattern, alphabet):
     # create an empty transition table of states and letters
     dfa = [dict((i, 0) for i in alphabet) for j in pattern]
@@ -35,11 +35,11 @@ def create_dfa(pattern, alphabet):
         # update restart state
         x = dfa[x][pattern[state]]
     return dfa
-~~~
+{% endhighlight %}
 
 Once the DFA is constructed the rest is fairly trivial.
 
-~~~ python
+{% highlight python %}
 def kmp(needle, haystack, alphabet):
     dfa = create_dfa(needle, alphabet)
     x = 0
@@ -48,7 +48,7 @@ def kmp(needle, haystack, alphabet):
         if x == len(needle):
             return index
     return False
-~~~
+{% endhighlight %}
 
 Note that this function doesn't quite hit the O(m+n) target as it's also proportional alphabet size and therefore O(m\|Σ\| + n). But this won't be a significant problem for small alphabets like DNA. The code here implements [Sedgwick and Wayne's](http://algs4.cs.princeton.edu/53substring/) take on KMP. The [original paper](http://www.cs.jhu.edu/~misha/ReadingSeminar/Papers/Knuth77.pdf) uses a more sophisticated algorithm to create a non-deterministic finite automaton and thereby avoid scaling with \|Σ\|.
 
@@ -58,7 +58,7 @@ The reasons for using human DNA as a test dataset go beyond its conveniently sma
 
 The human genome can be downloaded [here](http://hgdownload-test.cse.ucsc.edu/goldenPath/hg38/bigZips). You'll also need a [twobitreader](https://pypi.python.org/pypi/twobitreader) to parse it. Even a single chromosome can take up *a lot* of memory so the code below processes it in chunks of one million nucleotides. Since KMP doesn't backtrack, each nucleotide can be read once and thrown away.
 
-~~~ python
+{% highlight python %}
 def chromosone(number, buffer_size=1000000):
     genome = twobitreader.TwoBitFile('hg38.2bit')
     chromosome = genome['chr%d' % number]
@@ -66,12 +66,12 @@ def chromosone(number, buffer_size=1000000):
         buffer = chromosone[:i]
         for nucleotide in buffer:
             yield nucleotide.lower()
-~~~
+{% endhighlight %}
 
 Then it's just a matter of giving KMP a pattern, chromosome and alphabet.
 
-~~~ python
+{% highlight python %}
 kmp('atgatc', chromosone(20), 'atgcn')
-~~~
+{% endhighlight %}
 
 The result can be verified with [Ensembl](http://useast.ensembl.org/Homo_sapiens/Variation/Explore?r=4:61226534-61227533;v=rs34640111;vdb=variation;vf=9452422), quite literally a search engine for humans. It also be modified to match multiple patterns by having creating a list of DFAs and processing them all at once. Indeed, the [Aho–Corasick algorithm](http://cr.yp.to/bib/1975/aho.pdf) takes this a step further and combines multiple patterns into a single DFA!
