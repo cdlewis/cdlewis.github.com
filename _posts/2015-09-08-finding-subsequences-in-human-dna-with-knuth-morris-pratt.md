@@ -8,13 +8,13 @@ tags: [algorithms]
 
 Substring searching has become so ubiquitous in recent years that it's easy to take for granted the beauty and ingenuity of automata-based pattern matching. Remarkably, the importance of these algorithms has, if anything, continued to grow. Knuth-Morris-Pratt was published in 1974 but [Skiena’s ‘killer applications’ for string processing](http://www.algorithm.cs.sunysb.edu/computationalbiology/pdf/lecture8.pdf) — online search and computational biology — wouldn’t emerge until decades later.
 
-The key insight of KMP is that backtracking is unnecessary. Each character only needs to be examined once. Consequently the algorithmic complexity is O(n+m) rather than the O(nm) required by the naïve approach. KMP achieves this by reframing the problem as being one of finding the longest prefix of the pattern that is also a suffix of the input string. A substring will be found when the prefix length is equal to the pattern length.
+The key insight of KMP is that backtracking is unnecessary as each character only needs to be examined once. This reduces the algorithmic complexity from O(mn) in the naïve case to O(m+n). KMP achieves this by asking a slightly easier question: at any given point what is the longest prefix of the pattern that is also a suffix of the input string? If we encounter a point at which the prefix length is equal to the pattern length, we can reconstruct the matching substring.
 
 ![dfa representing nucleotide pattern](/assets/images/2015-08-30/DFA.jpg)
 DFA representing the pattern 'ATGAT'. States indicate partial matches so, for example, being in state two indicates that the last two characters were 'AT'.
 {: .caption}
 
-The longest prefix is tracked in a deterministic finite automaton (DFA), created by pre-processing the pattern. Each state represents a particular partial match and the transition arrows indicate the impact on the match from seeing various new characters.
+The longest prefix is tracked in a deterministic finite automaton (DFA), created by pre-processing the pattern. Each state represents a particular partial match and the transition arrows indicate effect of new characters on the size of the match.
 
 ## Creating the DFA
 
@@ -50,7 +50,7 @@ def kmp(needle, haystack, alphabet):
     return False
 ~~~
 
-Note that this function doesn't quite hit the O(m+n) target as it's also proportional alphabet size and therefore O(m\|Σ\| + n). But this won't be a significant problem for small alphabets like DNA. The code here implements [Sedgwick and Wayne's](http://algs4.cs.princeton.edu/53substring/) take on KMP. The [original paper](http://www.cs.jhu.edu/~misha/ReadingSeminar/Papers/Knuth77.pdf) uses a more sophisticated algorithm to create a non-deterministic finite automaton and avoid scaling with \|Σ\|.
+Note that this function doesn't quite hit the O(m+n) target as it's also proportional alphabet size and therefore O(m\|Σ\| + n). But this won't be a significant problem for small alphabets like DNA. The code here implements [Sedgwick and Wayne's](http://algs4.cs.princeton.edu/53substring/) take on KMP. The [original paper](http://www.cs.jhu.edu/~misha/ReadingSeminar/Papers/Knuth77.pdf) uses a more sophisticated algorithm to create a non-deterministic finite automaton and thereby avoid scaling with \|Σ\|.
 
 ## Searching Human DNA
 
@@ -74,4 +74,4 @@ Then it's just a matter of giving KMP a pattern, chromosome and alphabet.
 kmp('atgatc', chromosone(20), 'atgcn')
 ~~~
 
-The result can be verified with [Ensembl](http://useast.ensembl.org/Homo_sapiens/Variation/Explore?r=4:61226534-61227533;v=rs34640111;vdb=variation;vf=9452422), quite literally a search engine for humans. It also be modified to match multiple patterns by having creating a list of DFAs and processing them all at once. Indeed, the [Aho–Corasick algorithm](http://cr.yp.to/bib/1975/aho.pdf) takes this a step further and combines multiple patterns into a single DFA.
+The result can be verified with [Ensembl](http://useast.ensembl.org/Homo_sapiens/Variation/Explore?r=4:61226534-61227533;v=rs34640111;vdb=variation;vf=9452422), quite literally a search engine for humans. It also be modified to match multiple patterns by having creating a list of DFAs and processing them all at once. Indeed, the [Aho–Corasick algorithm](http://cr.yp.to/bib/1975/aho.pdf) takes this a step further and combines multiple patterns into a single DFA!
