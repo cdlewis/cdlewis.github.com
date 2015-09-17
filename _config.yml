@@ -3,12 +3,16 @@ permalink: /:categories/:year/:month/:day/:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 relative_permalinks: false
 paginate: 5
-title: Chris Lewis
-production_url: http://www.chrislewis.com.au
 markdown: kramdown
 highlighter: pygments
+website:
+    title: Chris' Blag
+    description: Various ramblings.
+    image: http://chrislewis.com.au/assets/images/developer-koala.jpg
+    production_url: http://www.chrislewis.com.au
 author:
     name: Chris Lewis
     email: chris.lewis2@gmail.com
     github: cdlewis
     twitter: chrislewis_aus
+    facebook: chris.lewis2

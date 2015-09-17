@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Leveraging PEP 380 for more Elegant Recursive Graph Functions"
-description: ""
+title: Leveraging PEP 380 for more Elegant Recursive Graph Functions
+description:
 category:
 tags: [algorithms, path]
 ---
