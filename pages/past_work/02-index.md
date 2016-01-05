@@ -8,11 +8,11 @@ permalink: /pages/past_work/
 
 Whilst in Washington DC, I got to work on some cool stuff for [IJ](http://www.ij.com) and [IMGE](http://www.imge.com) (both entities of MGA).
 
-*IJ is a social news company that serves millions of Americans daily with shareable, informative, and mobile friendly content.* 'Create Your Own $10' was in response to reports that a women would be featured on the new $10 bill. It runs on NodeJS/Express and uses Amazon S3 to store the images.
+*IJ is a social news company that serves millions of Americans daily with shareable, informative, and mobile friendly content.* 'Create Your Own $10' was in response to rumours that a woman's portrait would be featured on a redesigned ten-dollar bill by 2020. It runs on NodeJS/Express and uses Amazon S3 to store the images.
 
 [![$10 Bill](your_bill.jpg)](http://10.ij.com)
 
-*IMGE does digital advocacy for a variety of corporate and political clients.* For the American Unity Fund's marriage equality campaign we build a map of America filled (dynamically) with the faces of those who had signed the petition (either from social media or through manual user upload). The map is created from ASCII art and is therefore completely customisable.
+*IMGE does digital advocacy for a variety of corporate and political clients.* For the American Unity Fund's marriage equality campaign we built a map of America filled (dynamically) with the faces of those who had signed the petition (either from social media or through manual user upload). The map is created from ASCII art and is therefore completely customisable.
 
 [![Stand Out](stand_out.jpg)](http://www.auf.com)
 
