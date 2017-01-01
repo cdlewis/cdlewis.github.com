@@ -6,9 +6,9 @@ group: navigation
 permalink: /pages/past_work/
 ---
 
-Whilst in Washington DC, I got to work on some cool stuff for [IJ](http://www.ij.com) and [IMGE](http://www.imge.com) (both entities of MGA).
+Whilst in Washington DC, I got to work on some cool stuff for [IMGE](http://www.imge.com).
 
-*IJ is a social news company that serves millions of Americans daily with shareable, informative, and mobile friendly content.* 'Create Your Own $10' was in response to rumours that a woman's portrait would be featured on a redesigned ten-dollar bill by 2020. It runs on NodeJS/Express and uses Amazon S3 to store the images.
+*IJReview, a related entity to IMGE, is a social news company that serves millions of Americans daily with shareable, informative, and mobile friendly content.* 'Create Your Own $10' was in response to rumours that a woman's portrait would be featured on a redesigned ten-dollar bill by 2020. It runs on NodeJS/Express backed by Amazon S3.
 
 [![$10 Bill](your_bill.jpg)](http://10.ij.com)
 
