@@ -5,47 +5,47 @@ theme:
 
 <!DOCTYPE html>
 <html lang='en-US'>
-    <head>
+  <head>
     <meta charset='utf-8' />
-        <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1.5, minimum-scale=0.5'>
-        <link rel='icon' type='image/png' href='/assets/images/icon.png' />
-        <title>{{page.title}}</title>
-        <link rel='profile' href='http://gmpg.org/xfn/11' />
-        <link rel='stylesheet' type='text/css' href='/assets/css/style.min.css?v={{site.version}}' />
-        <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css' />
-        <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=PT+Sans|Roboto:700' />
-        <meta property='og:locale' content='en_US' />
-        <meta property='og:type' content='website' />
-        <meta property='og:url' content='http://www.chrislewis.com.au/' />
-        <meta property='og:title' content="{{page.title}}" />
-        <meta property='og:description' content='{{page.description}}' />
-        <meta property='og:image' content='{{page.image}}' />
-        <meta property='fb:admins' content='{{site.author.facebook}}' />
-    </head>
-    <body class="home blog">
-        <header id="sidebar">
-            <figure class="logo medium">
-                <a href="/"><img src="/assets/images/developer-koala.jpg" caption="{{site.title}}" /></a>
-            </figure>
-            <h1><a href="/">{{site.author.name}}</a></h1>
-            <a href='#' id='mobile_menu'><i class='fa fa-bars'></i></a>
-            <ul id="user_nav">
-                <div class="menu">
-                    <ul>{% assign pages_list = site.pages %}{% assign group = 'navigation' %}{% include pages_list %}
-                        {% if site.author.email %}<li><a target="_blank" class="email" href="mailto:{{site.author.email}}">Contact Me</a></li>{% endif %}
-                    </ul>
-                </div>
-                <div id="social_icons">
-                    <i><a class="fa fa-twitter" href="http://www.twitter.com/{{ site.author.twitter }}"></a></i>
-                    <i><a class="fa fa-github" href="http://www.github.com/{{ site.author.github }}"></a></i>
-                    <i><a class="fa fa-linkedin" href="http://www.linkedin.com/in/{{ site.author.linkedin }}"></a></i>
-                    <i><a class="fa fa-rss" href="/pages/rss.xml"></a></i>
-                </div>
-            </ul>
-            <div class='clearfix'></div>
-        </header>
-        <section id="river" role="main">{{content}}</section>
-        <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
-        <script type='text/javascript' src='/assets/js/base.js?v={{site.version}}' async defer></script>
-    </body>
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1.5, minimum-scale=0.5'>
+    <link rel='icon' type='image/png' href='/assets/images/icon.png' />
+    <title>{{page.title}}</title>
+    <link rel='profile' href='http://gmpg.org/xfn/11' />
+    <link rel='stylesheet' type='text/css' href='/assets/css/style.min.css?v={{site.version}}' />
+    <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css' />
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=PT+Sans|Roboto:700' />
+    <meta property='og:locale' content='en_US' />
+    <meta property='og:type' content='website' />
+    <meta property='og:url' content='http://www.chrislewis.com.au/' />
+    <meta property='og:title' content="{{page.title}}" />
+    <meta property='og:description' content='{{page.description}}' />
+    <meta property='og:image' content='{{page.image}}' />
+    <meta property='fb:admins' content='{{site.author.facebook}}' />
+  </head>
+  <body class="home blog">
+    <header id="sidebar">
+      <figure class="logo medium">
+        <a href="/"><img src="/assets/images/developer-koala.jpg" caption="{{site.title}}" /></a>
+      </figure>
+      <h1><a href="/">{{site.author.name}}</a></h1>
+      <a href='#' id='mobile_menu'><i class='fa fa-bars'></i></a>
+      <ul id="user_nav">
+        <div class="menu">
+          <ul>{% assign pages_list = site.pages %}{% assign group = 'navigation' %}{% include pages_list %}
+              {% if site.author.email %}<li><a target="_blank" class="email" href="mailto:{{site.author.email}}">Contact Me</a></li>{% endif %}
+          </ul>
+        </div>
+        <div id="social_icons">
+          <i><a class="fa fa-twitter" href="http://www.twitter.com/{{ site.author.twitter }}"></a></i>
+          <i><a class="fa fa-github" href="http://www.github.com/{{ site.author.github }}"></a></i>
+          <i><a class="fa fa-linkedin" href="http://www.linkedin.com/in/{{ site.author.linkedin }}"></a></i>
+          <i><a class="fa fa-rss" href="/pages/rss.xml"></a></i>
+        </div>
+      </ul>
+      <div class='clearfix'></div>
+    </header>
+    <section id="river" role="main">{{content}}</section>
+    <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
+    <script type='text/javascript' src='/assets/js/base.js?v={{site.version}}' async defer></script>
+  </body>
 </html>
