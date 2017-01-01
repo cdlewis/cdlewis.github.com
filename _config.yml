@@ -4,7 +4,7 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 relative_permalinks: false
 paginate: 5
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 website:
     title: Chris' Blag
     description: Various ramblings.
