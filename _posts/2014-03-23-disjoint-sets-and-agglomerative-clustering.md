@@ -20,9 +20,9 @@ This could be more formally expressed as:
 {% highlight html %}
 1. Let each element x in set 𝐂 be a singleton cluster
 2. Until |𝐂| = 1:
-    2.1 Remove two most similar clusters (x₁, x₂)
-    2.2 Join to create new cluster (xₐ)
-    2.3 Insert xₐ into 𝐂
+	2.1 Remove two most similar clusters (x₁, x₂)
+	2.2 Join to create new cluster (xₐ)
+	2.3 Insert xₐ into 𝐂
 {% endhighlight %}
 
 Of course the main issue with this approach is efficiently finding similar clusters, which (optimistically) could take Ο(n²) time. But an important secondary issue relates to the need for a data structure to track cluster membership. A simple approach would be to use map element_id → cluster_id however this does not adequately handle the case where the two elements being merged are part of larger clusters, which would in turn also require merging.
