@@ -26,4 +26,4 @@ I live in San Francisco and work at Uber on [UberEATS](https://eats.uber.com/).
 
 I really like Javascript and am interested in tools we can use to make it safer, such as type checking. As well as abstractions to make our code more scalable and maintainable.
 
-Before moving to America, I spent way too much time in [school](http://www.unimelb.edu.au), eventually graduating with degrees in computer science and law.
+Before moving to the United States, I spent way too much time in [school](http://www.unimelb.edu.au), eventually graduating with degrees in computer science and law.

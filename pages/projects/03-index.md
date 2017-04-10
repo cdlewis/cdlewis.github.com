@@ -8,6 +8,12 @@ permalink: /pages/projects/
 
 Some of the things I've made over the years are in a usable state and still online. You can find them here!
 
+## [Snapshotter](https://www.npmjs.com/package/snapshotter)
+
+Snapshot testing is a compelling feature but sometimes it isn't possible to port large projects to tools like Jest. Snapshotter is designed to work within an existing Tape/Enzyme setup while providing some basic snapshot functionality.
+
+[![Snapshotter](snapshotter.png)](https://www.npmjs.com/package/snapshotter)
+
 ## [Sudoku Solver](https://itunes.apple.com/US/app/id963980466?mt=8)
 
 Solvr is an iOS app written in Objective C++ (with some help from OpenCV/Tesseract) that uses the device's camera and [Norvig's](http://norvig.com/sudoku.html) constraint propogation approach to solve any sudoku at the push of a button. The source is [available on Github](https://github.com/cdlewis/Solvr).
