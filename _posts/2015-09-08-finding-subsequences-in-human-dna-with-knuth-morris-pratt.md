@@ -11,6 +11,8 @@ Substring searching has become so ubiquitous in recent years that it's easy to t
 
 The key insight behind KMP is that it's never necessary to backtrack when searching the text. Examining each character once is enough. Consequently the algorithmic complexity is reduced from O(mn) in the naïve case to O(m+n). KMP achieves this by re-framing the problem. Rather than whether a substring exists, it asks: what currently is the longest prefix of the pattern that is also a suffix of the input string?  Substrings can then be detected by checking whether the prefix length is equal to the pattern length.
 
+<!--break-->
+
 ![dfa representing nucleotide pattern](/assets/images/2015-08-30/DFA.jpg)
 A DFA representing the pattern 'ATGATC'. States indicate partial matches so, for example, being in state two indicates that the last two characters were 'AT'.
 {: .caption}

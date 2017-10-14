@@ -11,6 +11,8 @@ As part of an exercise I recently to implemented agglomerative clustering for a 
 
 Agglomerative clustering is a hierarchical clustering method that starts from the 'bottom up'. Each element initially forms its own cluster, with the nearest two clusters being progressively merged until only one remains.
 
+<!--break-->
+
 ![example cluster](/assets/images/2014-03-23/clusters.png)
 One potential clustering of {A, B, C, D},  represented as a binary tree. Each level is a stage in the clustering process. Elements are missing from a level in the tree when their cluster is unchanged.
 {: .caption}

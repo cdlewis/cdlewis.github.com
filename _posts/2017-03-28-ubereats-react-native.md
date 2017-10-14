@@ -13,6 +13,8 @@ tags: [react-native, flow, redux-saga]
 
 With [UberEATS](https://www.ubereats.com/), our aim is to make ordering food from your favourite restaurants as seamless as requesting a ride with uberX or uberPOOL. Like launching any new product, building out a food delivery network came with its fair share of engineering triumphs and surprises. Although tasty, this new flavourful passenger (food!) also comes with its fair share of challenges. For instance, it cannot specify its preferred route or chit chat with the driver and it does require more steps at pickup and dropoff. In this article, we focus on one challenge in particular: how Uber Engineering handled introducing a third party to what had previously been a two-sided marketplace.
 
+<!--break-->
+
 Fortunately, we were able to get UberEATS up and running quickly by leveraging much of Uber’s existing technology stack. A trip became a delivery. Driver-partners became delivery-partners, and riders became eaters. But there was no analogous party to the restaurant, because for the past five years the assumption had been that there would only be two people involved in a single trip; not three people and one cheese pizza, order of Pad Thai, or chicken fajita.
 
 ## Building Restaurant Dashboard

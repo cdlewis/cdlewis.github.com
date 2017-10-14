@@ -5,6 +5,7 @@ relative_permalinks: false
 paginate: 5
 markdown: kramdown
 highlighter: rouge
+excerpt_separator: '<!--break-->'
 website:
     title: Chris' Blag
     description: Various ramblings.

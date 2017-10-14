@@ -1,0 +1,238 @@
+header#sidebar {
+	position: fixed;
+	width: 26%;
+    z-index: 1;
+    a.active {
+        color: black !important;
+        border-color: black !important;
+    }
+    h1, h2 {
+        margin:0;
+        font-weight:900;
+        color: #585858;
+        font-family: $header_font;
+        width:75%;
+        a {
+            color: #585858 !important;
+        }
+    }
+    h1 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 30px;
+    }
+    h2 {
+    	margin-top: 10px;
+    	letter-spacing: 1px;
+    	font-size: 13px;
+    	line-height: 16px;
+    	text-transform: uppercase;
+    }
+    h3 {
+    	font-weight: 300;
+    	font-size: 16px;
+    	line-height: 23px;
+    	color: #585c60;
+    	-webkit-font-smoothing: antialiased;
+    	margin: 0;
+    	margin-bottom: 25px;
+    	margin-top: 10px;
+    }
+    figure.logo a {
+        top: 10px;
+        left: 10px;
+        width: 170px;
+        height: 170px;
+    }
+    &.menu_active {
+        @media all and ( max-width: $responsive_start ) {
+            #user_nav {
+                max-height: 50vh;
+                li:hover, li.active {
+                    background-color: rgba(226, 226, 226, 0.93);
+                }
+            }
+            #mobile_menu i {
+                -webkit-transform: rotate( 90deg );
+                -ms-transform: rotate( 90deg );
+                transform: rotate( 90deg );
+            }
+        }
+    }
+    #mobile_menu {
+        display: none;
+        float: right;
+        margin-right: 15px;
+        font-size: 30px;
+        line-height: 30px;
+        top: -2px;
+        position: relative;
+        color: $lt_grey !important;
+        i {
+            -webkit-transition: -webkit-transform 0.1s linear;
+            -ms-transition: -ms-transform 0.1s linear;
+            transition: transform 0.1s linear;
+        }
+        @media all and ( max-width: $responsive_start ) {
+            display: block;
+        }
+    }
+    @media all and ( max-width: $responsive_start ) {
+        display: block;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 99;
+        min-height: 0;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        float: none;
+        text-align: center;
+        background-color: rgba( 255, 255, 255, 0.93 );
+        overflow: hidden;
+        border-bottom: 1px solid #e2e2e2;
+        padding-top: 15px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    	h1, h2, h3 {
+            max-width: 70%;
+            width: auto;
+            margin: 0 auto;
+        }
+        h1 {
+            display: inline-block;
+            float: left;
+            padding-left: 0px;
+            margin-left: 10px;
+            font-size: 25px;
+        }
+    	h2 {
+            margin-top: 2px
+        }
+    	h3 {
+            margin-top: 5px;
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+    	figure {
+            float: left;
+            padding: 0;
+            &.logo {
+                padding-left: 15px;
+                margin: 0 auto;
+                position: relative;
+                left: auto;
+                right: auto;
+            }
+            img {
+                max-width: 30px;
+                padding-top: 0px;
+            }
+        }
+    }
+    ul#user_nav {
+        position: relative;
+        transition: max-height 0.4s ease-in-out;
+        overflow: hidden;
+        li a, .nav_button {
+            display: inline-block;
+            font-size: 17px;
+            -moz-border-radius: 20px;
+            color: $lt_grey;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 17px;
+            &:hover {
+                color: #000;
+                border-color: #000;
+            }
+        }
+        li {
+            @media all and ( max-width: $responsive_start ) {
+                display: block;
+                a {
+                    display: block;
+                    border: none;
+                    position: relative;
+                    margin: 0;
+                    padding: 15px;
+                    font-size: 20px;
+                    border-radius: 0px;
+                    margin-left: -10px;
+                    margin-right: -10px;
+                    &, &:hover, &.active {
+                        border-top: 1px solid #e2e2e2 !important;
+                    }
+                }
+                &.active {
+                    border-top: none;
+                }
+            }
+        }
+        @media all and ( max-width: $responsive_start ) {
+            margin-top: 0px;
+            float: right;
+            width: 100%;
+            padding: 0;
+            max-height: 0px;
+            top: 6px;
+        }
+    }
+    #social_icons {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        margin-bottom: 30px;
+        text-align: center;
+        a {
+            font-size: 25px;
+            padding: 5px;
+            width: 30px;
+            text-align: center;
+            color: $lt_grey;
+        }
+        &:hover {
+            color: black;
+            cursor: pointer;
+        }
+        @media all and ( max-width: $responsive_start ) {
+        	position: relative;
+            margin-bottom: 0px;
+            border-top: 1px solid #e2e2e2;
+            border-bottom: 1px solid #e2e2e2;
+            cursor: default;
+            a {
+                padding: 10px;
+            }
+        }
+    }
+    @media all and ( min-width: $full_screen ) {
+        h1, #user_nav {
+            margin-left: 28px;
+        }
+    }
+}
+
+header#begin {
+    padding: 0 0 0 40px;
+}
+
+/* Only top and bottom padding for first header */
+section#river > header:first-child {
+    padding: 40px 0 40px 40px;
+}
+
+header#begin time {
+	display: block;
+	font-family: $body_font;
+	position: relative;
+	text-transform: uppercase;
+	color: #000;
+	font-weight: 700;
+	font-size: 16px;
+	letter-spacing: 1px;
+	line-height: 23px
+}

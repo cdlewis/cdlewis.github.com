@@ -10,6 +10,8 @@ As my original introduction to data structures was in the context of C/C++, it's
 
 A recursive algorithm to find a path between two vertices, as in almost any other language, is trivial.
 
+<!--break-->
+
 {% highlight python %}
 def find_path(self, x, y, path=[]):
     path.append(x)
