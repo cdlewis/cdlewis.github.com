@@ -18,9 +18,7 @@ theme:
     <meta property='og:description' content='{{page.description}}' />
     <meta property='og:image' content='{{page.image}}' />
     <meta property='fb:admins' content='{{site.author.facebook}}' />
-    <style type="text/css">
-      {% include style.min.css %}
-    </style>
+    <style type="text/css">{% include style.min.css %}</style>
   </head>
   <body class="home blog">
     <header id="sidebar">
@@ -33,25 +31,18 @@ theme:
       <a href='#' id='mobile_menu' onClick='toggle_menu()'><i class='fa fa-bars'></i></a>
       <ul id="user_nav">
         <div class="menu">
-          <ul>{% assign pages_list = site.pages %}{% assign group = 'navigation' %}{% include pages_list %}
-              {% if site.author.email %}<li><a target="_blank" class="email" href="mailto:{{site.author.email}}">Contact Me</a></li>{% endif %}
-          </ul>
+          <ul>{% assign pages_list = site.pages %}{% assign group = 'navigation' %}{% include pages_list %}</ul>
         </div>
         <div id="social_icons">
-          <i><a class="fa fa-twitter" href="http://www.twitter.com/{{ site.author.twitter }}"></a></i>
-          <i><a class="fa fa-github" href="http://www.github.com/{{ site.author.github }}"></a></i>
-          <i><a class="fa fa-linkedin" href="http://www.linkedin.com/in/{{ site.author.linkedin }}"></a></i>
-          <i><a class="fa fa-rss" href="/pages/rss.xml"></a></i>
+          <i><a href="http://www.twitter.com/{{ site.author.twitter }}"><img src='/assets/images/twitter.svg' /></a></i>
+          <i><a href="http://www.github.com/{{ site.author.github }}"><img src='/assets/images/github.svg' /></a></i>
+          <i><a href="http://www.linkedin.com/in/{{ site.author.linkedin }}"><img src='/assets/images/linkedin.svg' /></a></i>
+          <i><a href="/pages/rss.xml"><img src='/assets/images/feed.svg' /></a></i>
         </div>
       </ul>
       <div class='clearfix'></div>
     </header>
     <section id="river" role="main" onClick="close_menu()">{{content}}</section>
-    <noscript id="deferred-styles">
-      <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css' />
-    </noscript>
-    <script type='text/javascript'>
-      {% include base.js %}
-    </script>
+    <script type='text/javascript'>{% include base.js %}</script>
   </body>
 </html>

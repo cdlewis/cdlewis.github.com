@@ -188,11 +188,13 @@ header#sidebar {
         margin-bottom: 30px;
         text-align: center;
         a {
-            font-size: 25px;
             padding: 5px;
-            width: 30px;
             text-align: center;
             color: $lt_grey;
+			margin-right: 10px;
+            img {
+                width: 25px;
+            }
         }
         &:hover {
             color: black;
