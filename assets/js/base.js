@@ -1,17 +1,28 @@
-jQuery( document ).ready( function( $ ) {
-    // responsive menu button
+// load deferred styles
 
-    $( '#mobile_menu' ).click( function( event ) {
-        event.preventDefault();
-        $( '#sidebar' ).toggleClass( 'menu_active' );
-    } );
+var loadDeferredStyles = function() {
+  var addStylesNode = document.getElementById("deferred-styles");
+  var replacement = document.createElement("div");
+  replacement.innerHTML = addStylesNode.textContent;
+  document.body.appendChild(replacement)
+  addStylesNode.parentElement.removeChild(addStylesNode);
+};
+requestAnimationFrame(() => window.setTimeout(loadDeferredStyles, 0));
 
-    $( '#river' ).click( function( event ) {
-        if( $( '#sidebar' ).hasClass( 'menu_active' ) ) {
-            $( '#sidebar' ).removeClass( 'menu_active' );
-        }
-    } );
+// menu functionality
 
-    // print xckd 148
-    console.log( '------------------------------------------------\n|                  My Hobby:                   |\n|             Mispronouncing Words             |\n|                                              |\n|  Yeah, did you see what he                   |\n|  said on his wobsite?                        |\n|      \\                         ...His what?  |\n|    Wobsite.                         /        |\n|        \\                     ...I think you  |\n|      Why don\'t you write     mean "website"  |\n|      about it in                /            |\n|      your blag?                /             |\n|           \\                   /              |\n|            O                 O               |\n|           \\|/               \\|/              |\n|            /\\                /\\              |\n|----------------------------------------------|\n' );
-} );
+function toggle_menu() {
+  const sidebar = document.getElementById('sidebar');
+  if (sidebar.getAttribute('class')) {
+    close_menu();
+  } else {
+    sidebar.setAttribute('class', 'menu_active');
+  }
+}
+
+function close_menu() {
+  document.getElementById('sidebar').setAttribute('class', '');
+}
+
+// print xckd 148
+console.log( '------------------------------------------------\n|                  My Hobby:                   |\n|             Mispronouncing Words             |\n|                                              |\n|  Yeah, did you see what he                   |\n|  said on his wobsite?                        |\n|      \\                         ...His what?  |\n|    Wobsite.                         /        |\n|        \\                     ...I think you  |\n|      Why don\'t you write     mean "website"  |\n|      about it in                /            |\n|      your blag?                /             |\n|           \\                   /              |\n|            O                 O               |\n|           \\|/               \\|/              |\n|            /\\                /\\              |\n|----------------------------------------------|\n' );
