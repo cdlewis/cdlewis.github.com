@@ -50,6 +50,8 @@ theme:
     <noscript id="deferred-styles">
       <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css' />
     </noscript>
-    <script type='text/javascript' src='/assets/js/base.js?v={{site.version}}' async defer></script>
+    <script type='text/javascript'>
+      {% include base.js %}
+    </script>
   </body>
 </html>
