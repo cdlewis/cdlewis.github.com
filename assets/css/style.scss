@@ -189,6 +189,9 @@ section article.post p, section article.post li {
     		min-height: 250px;
     		min-width: 0;
     	}
+        &.post:first-of-type {
+            border: none;
+        }
     }
 }
 
@@ -199,11 +202,6 @@ section article.post p, section article.post li {
             padding-bottom: 5px;
         }
     }
-}
-
-article.post {
-    overflow: visible;
-    border-top: 1px solid #e2e2e2;
 }
 
 /* Responsive Images */

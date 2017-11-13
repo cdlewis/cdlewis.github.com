@@ -54,7 +54,7 @@ header#sidebar {
                     background-color: rgba(226, 226, 226, 0.93);
                 }
             }
-            #mobile_menu i {
+            #mobile_menu img {
                 -webkit-transform: rotate( 90deg );
                 -ms-transform: rotate( 90deg );
                 transform: rotate( 90deg );
@@ -65,15 +65,13 @@ header#sidebar {
         display: none;
         float: right;
         margin-right: 15px;
-        font-size: 30px;
-        line-height: 30px;
         top: -2px;
         position: relative;
-        color: $lt_grey !important;
-        i {
+        img {
             -webkit-transition: -webkit-transform 0.1s linear;
             -ms-transition: -ms-transform 0.1s linear;
             transition: transform 0.1s linear;
+            width: 20px;
         }
         @media all and ( max-width: $responsive_start ) {
             display: block;

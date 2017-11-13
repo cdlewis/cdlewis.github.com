@@ -67,9 +67,6 @@ article {
         border-top: 1px solid #e2e2e2;
         min-height: 130px;
         overflow-x: hidden;
-        @media all and ( max-width: $responsive_start ) {
-            border-top: none;
-        }
         ul {
             max-width: auto;
             min-width: 0;
