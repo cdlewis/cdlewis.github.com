@@ -46,3 +46,5 @@ def find_paths(self, x, y, path=[]):
         else:
             yield from self.find_paths(v, y, path)
 {% endhighlight %}
+
+{% include code_highlighting %}

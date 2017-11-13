@@ -31,9 +31,9 @@ section#river {
 	/* Article */
 
     article {
-        h1, h2, h3, h4, h5, h6, p, blockquote, iframe {
+        h1, h2, h3, p {
     		max-width: 100%;
-    		padding-right:0
+    		padding-right: 0;
     	}
     	&.post {
     		padding: 60px;
@@ -84,7 +84,6 @@ section#river {
     a {
         display: inline-block;
         font-size: 17px;
-        -moz-border-radius: 20px;
         color: $lt_grey;
         font-weight: 600;
         letter-spacing: 1px;
@@ -163,7 +162,6 @@ section#river {
         }
         #mobile_menu svg {
             -webkit-transform: rotate( 90deg );
-            -ms-transform: rotate( 90deg );
             transform: rotate( 90deg );
         }
     }

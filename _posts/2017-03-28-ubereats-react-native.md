@@ -236,3 +236,5 @@ This approach of having many small services communicating with each other throug
 It is nearly impossible to summarise in a single article the entire experience of deploying an application, particularly one that so significantly affected the way restaurants interact with the UberEATS application. If anything, we hope that this piece has provided some additional insight into our team’s thought process behind choosing React Native for UberEATS, as well as some of the steps we took to ensure a stable and robust user experience for our restaurant partners.
 
 While React Native still only constitutes a small portion of the UberEATS engineering ecosystem, our experience using it to rebuild Restaurant Dashboard has been very positive. Since its implementation last year, the revamped Restaurant Dashboard has become a standard tool for nearly every restaurant on UberEATS. At this rate, we are optimistic about the framework’s capacity to continue meeting our needs as we scale and expand our marketplace of users.
+
+{% include code_highlighting %}

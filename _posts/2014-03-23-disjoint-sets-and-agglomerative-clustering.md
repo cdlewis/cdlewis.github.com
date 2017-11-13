@@ -81,3 +81,5 @@ The above Python implementation of disjoint-sets is very simple but it can nonet
 More efficient disjoint-set implementations introduce optimisations such as path compression, which speeds up the Find operation by reducing the height of the tree. This leads to an [amortised complexity of Ο(log₂n)](http://en.wikipedia.org/wiki/Proof_of_O%28log*n%29_time_complexity_of_union%E2%80%93find). To take advantage of these performance gains, I ended up using an [existing disjoint-set implementation](http://code.activestate.com/recipes/577225-union-find/) by Ahmed El Deeb for my project.
 
 That said, the specific paths formed by the Union function could be used to reconstruct the history of the clustering hierarchy and therefore might be worth leaving untouched. Otherwise it would be necessary to dump a copy of the subsets before each merge in order to make use of the cluster topology. Ultimately the trade off is between increased computation time (longer traversals) and memory (storing intermediate clusterings) with the former generally scarcer on modern computers.
+
+{% include code_highlighting %}

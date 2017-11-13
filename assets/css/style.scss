@@ -1,12 +1,4 @@
-$full_screen: 992px;
-$responsive_start: 750px;
-$mobile_start: 500px;
-$lt_grey: #585858;
-$blue: #008AFF;
-$body_font: "Helvetica Neue", "Helvetica", sans-serif;
-$header_font: "Helvetica Neue", "Helvetica", sans-serif;
-
-@import "highlight";
+@import "constants";
 @import "article";
 @import "sidebar";
 @import "header";
@@ -15,7 +7,6 @@ $header_font: "Helvetica Neue", "Helvetica", sans-serif;
 html {
     font-size: 100%;
     -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
     font-family: $body_font;
     color: #222;
     body {
@@ -47,14 +38,14 @@ a {
     }
 }
 
-ul, ol {
+ul {
     margin: 0;
     padding:0;
     list-style: none;
     list-style-type: none;
 }
 
-nav ul, nav ol {
+nav ul {
     list-style: none;
     list-style-image: none;
     margin: 0;
@@ -63,32 +54,11 @@ nav ul, nav ol {
 
 img {
     border: 0;
-    -ms-interpolation-mode: bicubic;
     vertical-align: middle;
 }
 
 figure {
     margin: 0;
-}
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-.invisible {
-    visibility: hidden;
-}
-
-.clearfix {
-    *zoom: 1;
-    &:before, &:after{
-        content: "";
-        display: table;
-    }
-    &:after {
-        clear: both;
-    }
 }
 
 body {
@@ -131,14 +101,12 @@ a:link, a:visited, a:hover, a:active {
     margin-bottom: 12px;
 }
 
-table{width:auto;display:block}
-td{padding:10px;text-align:left}
-
 /* Logo */
 
 header .logo, header h1 {
   padding: 0px 30px 0px 30px;
 }
+
 figure.logo img {
     margin-top: 25px;
     max-width: 200px;
@@ -155,27 +123,17 @@ figure.logo img {
 		top: 8px;
 		left: 8px
 	}
-	header#sidebar h1 {
-        font-size: 25px;
-        line-height: 25px;
-    }
-	header#sidebar h2 {
-        font-size: 13px;
-    }
-	header#sidebar h3 {
-        font-size: 14px;
-    }
 }
 
 header#sidebar figure.logo a {
 	top: 10px;
 	left: 10px;
 	width: 170px;
-	height:170px
+	height: 170px;
 }
 section article.post p, section article.post li {
 	font-size: 17px;
-	line-height:27px
+	line-height: 27px;
 }
 
 @media all and ( max-width: $responsive_start ) {
@@ -184,10 +142,6 @@ section article.post p, section article.post li {
         img {
             width: 100%;
         }
-    	iframe, object {
-    		min-height: 250px;
-    		min-width: 0;
-    	}
         &.post:first-of-type {
             border: none;
         }
@@ -201,31 +155,4 @@ section article.post p, section article.post li {
             padding-bottom: 5px;
         }
     }
-}
-
-/* Responsive Images */
-
-section#river article p img, section#river article p iframe, section#river article p object {
-    height: auto;
-}
-
-blockquote {
-    border-left-color: #356AA0;
-}
-
-/* Account for not having illegal <p> in sidebar <h3>*/
-
-header#sidebar h3 {
-    color: #4D4D4D;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 23px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-/* Fix Margin on Sidebar Links */
-
-.page_item {
-    margin-bottom: 12px !important;
 }

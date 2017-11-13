@@ -78,3 +78,5 @@ kmp('atgatc', chromosone(20), 'atgcn')
 {% endhighlight %}
 
 The result can be verified with [Ensembl](http://useast.ensembl.org/Homo_sapiens/Variation/Explore?r=4:61226534-61227533;v=rs34640111;vdb=variation;vf=9452422), quite literally a search engine for humans. It can also be modified to match multiple patterns by creating a list of DFAs and processing them all at once. Indeed, the [Aho–Corasick algorithm](http://cr.yp.to/bib/1975/aho.pdf) takes this a step further and combines multiple patterns into a single DFA!
+
+{% include code_highlighting %}
