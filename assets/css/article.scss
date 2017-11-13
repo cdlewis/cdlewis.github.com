@@ -36,9 +36,7 @@ article {
         padding-bottom: 0;
         font-size: 15px;
         line-height: 25px;
-        margin-left: 0;
-        margin-top: 0;
-        margin-bottom: 0;
+        margin: 0;
         border-left: 10px solid #356AA0;
         p {
             padding-right: 0;
@@ -69,7 +67,6 @@ article {
             color: #000;
             text-decoration: none;
             border-bottom: 1px solid #CCC;
-            font-family: $header_font;
             font-weight: 700;
             font-size: 25px;
             line-height: 28px;
@@ -119,7 +116,7 @@ article {
         border-color: $blue;
       }
 
-      @media all and ( max-width: $responsive_start ) {
+      @media(max-width: $responsive_start) {
         margin: 0 auto;
         display: block;
         text-align: center;

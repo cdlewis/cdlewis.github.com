@@ -7,7 +7,7 @@ section#river {
 	background-color:#fff
 }
 
-@media all and ( max-width: $responsive_start ) {
+@media( max-width: $responsive_start ) {
 	section#river {
 		margin-left: 0;
 		border-left: none;
@@ -17,15 +17,15 @@ section#river {
 		display: block;
 		margin: 0;
 		margin-right: 0;
-		margin-left: 0
+		margin-left: 0;
 	}
 
 	ul#user_nav li.feed {
-        display: none
+        display: none;
     }
 
 	header.begin {
-        display:none
+        display:none;
     }
 
 	/* Article */
@@ -37,21 +37,18 @@ section#river {
     	}
     	&.post {
     		padding: 60px;
-            @media all and ( max-width: $responsive_start ) {
+            @media( max-width: $responsive_start ) {
                 padding: 15px;
             }
     	}
     	hr {
     		width: 80%;
-    		margin: 0 auto;
-    		margin-top: 35px;
-    		margin-bottom: 30px
+            margin: 35px auto 30px;
     	}
     	blockquote {
-            margin-left: 0;
+            margin: 0 0px 0 0px;
             max-width: none;
             min-width: 0;
-            margin-right: 0;
             padding: 0;
         }
     }
@@ -69,7 +66,7 @@ section#river {
     transition: max-height 0.4s ease-in-out;
     overflow: hidden;
     margin: 30px 0 0 0;
-    @media all and ( max-width: $responsive_start ) {
+    @media( max-width: $responsive_start ) {
         margin-top: 0px;
         float: right;
         width: 100%;
@@ -93,7 +90,7 @@ section#river {
             border-color: #000;
         }
     }
-    @media all and ( max-width: $responsive_start ) {
+    @media( max-width: $responsive_start ) {
         padding: 0;
         li {
             display: block;
@@ -139,7 +136,7 @@ section#river {
         color: black;
         cursor: pointer;
     }
-    @media all and ( max-width: $responsive_start ) {
+    @media( max-width: $responsive_start ) {
         position: relative;
         display: inline-block;
         padding: 15px 0px 15px 0px;
@@ -149,7 +146,7 @@ section#river {
 }
 
 .menu_active {
-    @media all and ( max-width: $responsive_start ) {
+    @media( max-width: $responsive_start ) {
         #user_nav {
             max-height: 50vh;
         }

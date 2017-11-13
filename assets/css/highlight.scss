@@ -8,7 +8,7 @@
     @media( max-width: $responsive_start ) {
         overflow-x: scroll;
     }
-    @media all and ( max-width: $mobile_start ) {
+    @media( max-width: $mobile_start ) {
         font-size: 12px;
     }
     .hll { background-color: #ffffcc }

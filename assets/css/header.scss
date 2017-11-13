@@ -6,39 +6,14 @@ header#sidebar {
         color: black !important;
         border-color: black !important;
     }
-    h1, h2 {
-        margin:0;
-        font-weight:900;
-        color: #585858;
-        font-family: $header_font;
-        width:75%;
-        a {
-            color: #585858 !important;
-        }
-    }
     h1 {
+        width:75%;
+        color: #585858;
         margin-top: 30px;
         margin-bottom: 30px;
         font-size: 30px;
         font-weight: bold;
         line-height: 30px;
-    }
-    h2 {
-    	margin-top: 10px;
-    	letter-spacing: 1px;
-    	font-size: 13px;
-    	line-height: 16px;
-    	text-transform: uppercase;
-    }
-    h3 {
-    	font-weight: 300;
-    	font-size: 16px;
-    	line-height: 23px;
-    	color: #585c60;
-    	-webkit-font-smoothing: antialiased;
-    	margin: 0;
-    	margin-bottom: 25px;
-    	margin-top: 10px;
     }
     figure.logo a {
         top: 10px;
@@ -58,11 +33,11 @@ header#sidebar {
             width: 20px;
             height: 20px;
         }
-        @media all and ( max-width: $responsive_start ) {
+        @media( max-width: $responsive_start ) {
             display: block;
         }
     }
-    @media all and ( max-width: $responsive_start ) {
+    @media( max-width: $responsive_start ) {
         display: block;
         position: fixed;
         top: 0px;
@@ -118,7 +93,7 @@ header#sidebar {
     }
 }
 
-@media all and ( min-width: $full_screen ) {
+@media( min-width: $full_screen ) {
     h1, #user_nav {
         margin-left: 28px;
     }
@@ -135,7 +110,6 @@ section#river > header:first-child {
 
 header.begin #top_time {
 	display: block;
-	font-family: $body_font;
 	position: relative;
 	text-transform: uppercase;
 	color: #000;

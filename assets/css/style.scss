@@ -13,11 +13,8 @@ html {
         margin: 0;
         font-size: 1em;
         line-height: 1.4;
-        @media all and ( max-width: $responsive_start ) {
+        @media( max-width: $responsive_start ) {
             padding-top: 58px;
-        }
-        h1, h2, h3 {
-            font-family: $header_font;
         }
     }
 }
@@ -25,12 +22,12 @@ html {
 a {
     color: $lt_grey;
     &:visited {
-        color: #551a8b;
+        color: $lt_grey;
     }
     &:hover {
         color: black;
     }
-    &:focus{
+    &:focus {
         outline: thin dotted;
     }
     &:hover, &:active {
@@ -59,12 +56,6 @@ img {
 
 figure {
     margin: 0;
-}
-
-body {
-	background-color: #fff;
-	font-family: $body_font;
-	font-weight: 400
 }
 
 p {
@@ -115,7 +106,7 @@ figure.logo img {
 
 /* Responsive Stuff */
 
-@media all and ( min-width: $responsive_start ) and (max-width:900px) {
+@media( min-width: $responsive_start ) and (max-width:900px) {
 	figure.logo.medium a {
 		border-width: 5px;
 		width: 95px;
@@ -136,7 +127,7 @@ section article.post p, section article.post li {
 	line-height: 27px;
 }
 
-@media all and ( max-width: $responsive_start ) {
+@media( max-width: $responsive_start ) {
     article {
         padding: 15px;
         img {
@@ -148,7 +139,7 @@ section article.post p, section article.post li {
     }
 }
 
-@media all and ( max-width: $responsive_start ) {
+@media( max-width: $responsive_start ) {
     header#sidebar {
         padding-bottom: 10px;
         &.menu_active {
