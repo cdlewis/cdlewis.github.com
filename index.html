@@ -12,4 +12,4 @@ image: http://www.chrislewis.com.au/assets/images/developer-koala.jpg
 {% if paginator.previous_page %}{% if paginator.previous_page == 1 %}<span class="prev"><a class="nav_button"href="/" rel="previous">←&nbsp;&nbsp;Previous</a></next>{% else %}<span class="prev"><a class="nav_button" href="/page{{ previous_page }}"" rel="previous">←&nbsp;&nbsp;Previous</a></next>{% endif %}{% endif %}
 <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
 {% if paginator.next_page %}<span class="next"><a class="nav_button" href="/page{{ paginator.next_page }}"" rel="next">Next&nbsp;&nbsp;→</a></next>{% endif %}
-</div>
+</nav>

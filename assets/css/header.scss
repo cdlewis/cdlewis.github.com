@@ -216,7 +216,7 @@ header#sidebar {
     }
 }
 
-header#begin {
+header.begin {
     padding: 0 0 0 40px;
 }
 
@@ -225,7 +225,7 @@ section#river > header:first-child {
     padding: 40px 0 40px 40px;
 }
 
-header#begin time {
+header.begin #top_time {
 	display: block;
 	font-family: $body_font;
 	position: relative;

@@ -1,16 +1,9 @@
 // menu functionality
 
-function toggle_menu() {
-  const sidebar = document.getElementById('sidebar');
-  if (sidebar.getAttribute('class')) {
-    close_menu();
-  } else {
-    sidebar.setAttribute('class', 'menu_active');
-  }
-}
-
-function close_menu() {
-  document.getElementById('sidebar').setAttribute('class', '');
+function toggle_menu(override) {
+  var sidebar = document.getElementById('sidebar');
+  var nextClass = sidebar.getAttribute('class') ? '' : 'menu_active';
+  sidebar.setAttribute('class', typeof override === 'undefined' ?  nextClass : override);
 }
 
 // print xckd 148

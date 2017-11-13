@@ -1,6 +1,6 @@
-<header id="begin">
+<header class="begin">
   {% if forloop.index == null or forloop.first == true %}
-    <time datetime="{{ page.date }}" id="top_time">{{page.date | date: "%-d %B %Y" }}</time>
+    <div id="top_time">{{page.date | date: "%-d %B %Y" }}</div>
   {% endif %}
 </header>
 <article class="post">
