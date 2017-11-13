@@ -136,9 +136,8 @@ td{padding:10px;text-align:left}
 
 /* Logo */
 
-header .logo, header h1, header #user_nav, header #social_icons {
-    padding-left: 30px;
-    padding-right: 30px;
+header .logo, header h1 {
+  padding: 0px 30px 0px 30px;
 }
 figure.logo img {
     margin-top: 25px;

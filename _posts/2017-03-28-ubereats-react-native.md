@@ -7,7 +7,10 @@ image:
 tags: [react-native, flow, redux-saga]
 ---
 
-![](/assets/images/2017-03-28/header.jpg)
+<picture>
+  <source srcset="/assets/images/2017-03-28/header.webp" type="image/webp">
+  <img src="/assets/images/2017-03-28/header.jpg" alt="ubereats">
+</picture>
 
 *I originally wrote this article for the Uber engineering blog. You can find the original article [here](https://eng.uber.com/ubereats-react-native/).*
 
