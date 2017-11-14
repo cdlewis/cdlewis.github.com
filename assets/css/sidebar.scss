@@ -3,8 +3,8 @@ section#river {
 	margin-left: 26%;
 	border-left: 1px solid #e3e3e3;
 	min-height: 900px;
-	z-index:10;
-	background-color:#fff
+	z-index: 10;
+	background-color: #fff;
 }
 
 @media( max-width: $responsive_start ) {
@@ -16,64 +16,62 @@ section#river {
 	ul#user_nav li {
 		display: block;
 		margin: 0;
-		margin-right: 0;
-		margin-left: 0;
 	}
 
 	ul#user_nav li.feed {
-        display: none;
-    }
+    display: none;
+  }
 
 	header.begin {
-        display:none;
-    }
+    display:none;
+  }
 
 	/* Article */
 
-    article {
-        h1, h2, h3, p {
-    		max-width: 100%;
-    		padding-right: 0;
-    	}
-    	&.post {
-    		padding: 60px;
-            @media( max-width: $responsive_start ) {
-                padding: 15px;
-            }
-    	}
-    	hr {
-    		width: 80%;
-            margin: 35px auto 30px;
-    	}
-    	blockquote {
-            margin: 0 0px 0 0px;
-            max-width: none;
-            min-width: 0;
-            padding: 0;
-        }
+  article {
+  	h1, h2, h3, p {
+    	max-width: 100%;
+    	padding-right: 0;
     }
+    &.post {
+      padding: 15px;
+    }
+    hr {
+    	width: 80%;
+      margin: 35px auto 30px;
+    }
+    blockquote {
+      margin: 0 0px 0 0px;
+      max-width: none;
+      min-width: 0;
+      padding: 0;
+    }
+  }
 
 	nav.pagination {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
+    padding: 0 10px 0 10px;
+  }
+
+  #sidebar {
+    padding-bottom: 10px;
+  }
 }
 
 /* Navigation */
 
 #user_nav {
-    position: relative;
-    transition: max-height 0.4s ease-in-out;
-    overflow: hidden;
-    margin: 30px 0 0 0;
-    @media( max-width: $responsive_start ) {
-        margin-top: 0px;
-        float: right;
-        width: 100%;
-        padding: 0;
-        max-height: 0px;
-        top: 6px;
-    }
+  position: relative;
+  transition: max-height 0.4s ease-in-out;
+  overflow: hidden;
+  margin: 30px 0 0 0;
+  @media( max-width: $responsive_start ) {
+    margin-top: 0px;
+    float: right;
+    width: 100%;
+    padding: 0;
+    max-height: 0px;
+    top: 6px;
+  }
 }
 
 #menu {
@@ -102,8 +100,7 @@ section#river {
                 padding: 15px;
                 font-size: 20px;
                 border-radius: 0px;
-                margin-left: -10px;
-                margin-right: -10px;
+                margin: 0 -10px 0 -10px;
                 &, &:hover, &.active {
                     border-top: 1px solid #e2e2e2 !important;
                 }
@@ -142,12 +139,6 @@ section#river {
         padding: 15px 0px 15px 0px;
         border-top: 1px solid #e2e2e2 !important;
         width: 100%;
-    }
-}
-
-@media( max-width: $responsive_start ) {
-    header#sidebar {
-        padding-bottom: 10px;
     }
 }
 
