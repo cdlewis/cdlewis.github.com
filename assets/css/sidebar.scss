@@ -145,21 +145,12 @@ section#river {
     }
 }
 
-.menu_active {
-    @media( max-width: $responsive_start ) {
-        #user_nav {
-            max-height: 50vh;
-        }
-        #menu {
-            li:hover, li.active {
-                a {
-                    background-color: rgba(226, 226, 226, 0.93);
-                }
-            }
-        }
-        #mobile_menu svg {
-            -webkit-transform: rotate( 90deg );
-            transform: rotate( 90deg );
-        }
+@media( max-width: $responsive_start ) {
+    header#sidebar {
+        padding-bottom: 10px;
     }
+}
+
+#open_menu:checked ~ #user_nav {
+    max-height: 50vh;
 }

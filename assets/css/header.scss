@@ -28,8 +28,6 @@ header#sidebar {
         top: -2px;
         position: relative;
         svg {
-            -webkit-transition: -webkit-transform 0.1s linear;
-            transition: transform 0.1s linear;
             width: 20px;
             height: 20px;
         }
@@ -54,7 +52,6 @@ header#sidebar {
         border-bottom: 1px solid #e2e2e2;
         padding-top: 15px;
         padding-right: 10px;
-        padding-bottom: 10px;
     	h1, h2, h3 {
             max-width: 70%;
             width: auto;

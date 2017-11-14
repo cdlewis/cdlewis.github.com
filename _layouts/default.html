@@ -31,7 +31,8 @@ theme:
       </a>
       </figure>
       <h1><a href="/">{{site.author.name}}</a></h1>
-      <a href='#' id='mobile_menu' onClick='toggle_menu()'>{% include images/bars.svg %}</a>
+      <label for='open_menu' id='mobile_menu'>{% include images/bars.svg %}</label>
+      <input type='checkbox' id='open_menu' class='hidden' />
       <ul id="user_nav">
         <li id="menu">
           <ul>{% assign pages_list = site.pages %}{% assign group = 'navigation' %}{% include pages_list %}</ul>
@@ -44,7 +45,6 @@ theme:
         </li>
       </ul>
     </header>
-    <section id="river" role="main" onClick="toggle_menu('')">{{content}}</section>
-    <script type='text/javascript'>{% include base.js %}</script>
+    <section id="river" role="main">{{content}}</section>
   </body>
 </html>

@@ -83,6 +83,10 @@ small {
     font-size: 80%;
 }
 
+.hidden {
+  display: none;
+}
+
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;
 }
@@ -135,15 +139,6 @@ section article.post p, section article.post li {
         }
         &.post:first-of-type {
             border: none;
-        }
-    }
-}
-
-@media( max-width: $responsive_start ) {
-    header#sidebar {
-        padding-bottom: 10px;
-        &.menu_active {
-            padding-bottom: 5px;
         }
     }
 }
