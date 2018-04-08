@@ -4,52 +4,17 @@
 @import "header";
 @import "footer";
 
-html {
-  font-size: 100%;
-  -webkit-text-size-adjust: 100%;
+body {
   font-family: $body_font;
-  body {
-    margin: 0;
-    @media (max-width: $responsive_start) {
-      padding-top: 58px;
-    }
-  }
+  margin: 0;
 }
 
 a {
   color: $lt_grey;
-  &:visited {
-    color: $lt_grey;
-  }
+  text-decoration: none;
   &:hover {
-    color: black;
+    color: #000;
   }
-  &:focus {
-    outline: thin dotted;
-  }
-  &:hover,
-  &:active {
-    outline: 0;
-  }
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  list-style-type: none;
-}
-
-nav ul {
-  list-style: none;
-  list-style-image: none;
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  border: 0;
-  vertical-align: middle;
 }
 
 figure {
@@ -58,42 +23,11 @@ figure {
 
 p {
   line-height: 23px;
-  margin: 20px 0 20px 0;
+  margin: 20px 0;
   color: #4d4d4d;
   text-align: justify;
 }
 
-em {
-  font-style: italic;
-}
-
-strong {
-  font-weight: bold;
-  color: #333;
-}
-
-small {
-  font-size: 80%;
-}
-
 .hidden {
   display: none;
-}
-
-a:link,
-a:visited,
-a:hover,
-a:active {
-  text-decoration: none;
-}
-
-.menu li {
-  line-height: 18px;
-  margin-bottom: 12px;
-}
-
-/* Logo */
-
-header h1 {
-  padding: 0 30px;
 }

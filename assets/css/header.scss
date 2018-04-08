@@ -1,9 +1,6 @@
 @import "constants";
 
 #logo {
-  top: 10px;
-  left: 10px;
-  padding: 0 30px;
   img {
     margin-top: 25px;
     max-width: 200px;
@@ -25,35 +22,27 @@
   }
 }
 
+h1 {
+  @media (max-width: $responsive_start) {
+    font-size: 25px;
+    float: left;
+    margin: 0;
+    padding-left: 10px;
+  }
+}
+
 #sidebar {
   position: fixed;
   width: 26%;
-  a.active {
-    color: #000;
-  }
-  h1 {
-    color: #585858;
-    font-weight: bold;
-    line-height: 30px;
-    margin-top: 30px;
-  }
+  margin: 0 30px;
   @media (max-width: $responsive_start) {
-    top: 0;
-    left: 0;
+    margin: 0;
     z-index: 99;
-    min-height: 0;
     width: 100%;
     text-align: center;
     background-color: #fffe;
     border-bottom: 1px solid #e2e2e2;
     padding-top: 15px;
-    h1 {
-      margin: 0;
-      display: inline;
-      float: left;
-      padding-left: 10px;
-      font-size: 25px;
-    }
   }
 }
 
@@ -64,13 +53,6 @@
   font-size: 20px;
   @media (max-width: $responsive_start) {
     display: block;
-  }
-}
-
-@media (min-width: $full_screen) {
-  h1,
-  #user_nav {
-    margin-left: 28px;
   }
 }
 

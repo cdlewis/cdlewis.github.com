@@ -2,13 +2,6 @@
 
 article {
   max-width: 600px;
-  h2 {
-    margin-top: 0;
-    a.anchor {
-      border-bottom: 0;
-      margin-left: 10px;
-    }
-  }
   img {
     display: block;
     padding: 0;
@@ -18,17 +11,8 @@ article {
 }
 
 .post {
-  display: block;
-  position: relative;
-  padding: 40px;
+  padding: 24px 40px;
   border-top: 1px solid #e2e2e2;
-  min-height: 130px;
-  overflow-x: hidden;
-  ul {
-    max-width: auto;
-    min-width: 0;
-    padding-right: 10px;
-  }
   h2 a {
     color: #000;
     font-size: 25px;
@@ -38,33 +22,14 @@ article {
   h2 {
     font-size: 20px;
   }
-  ul {
-    list-style-type: disc;
-    max-width: 470px;
-  }
-  ul li,
-  ol li {
+  li {
     line-height: 25px;
     color: #4d4d4d;
-    display: list-item;
-    margin: 5px 0 5px 0;
-  }
-  ol {
-    max-width: 470px;
   }
   @media (max-width: $responsive_start) {
     padding: 15px;
     &.post:first-of-type {
       border: none;
-    }
-    p,
-    li {
-      font-size: 17px;
-      line-height: 27px;
-    }
-    hr {
-      width: 80%;
-      margin: 35px auto 30px;
     }
     img {
       width: 100%;

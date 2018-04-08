@@ -1,32 +1,24 @@
 @import "constants";
 
 #river {
-  margin-left: 26%;
+  margin-left: calc(26% + 60px);
   border-left: 1px solid #e3e3e3;
   @media (max-width: $responsive_start) {
     margin-left: 0;
     border-left: none;
   }
+  @media (max-width: $mobile_start) {
+    padding-top: 58px;
+  }
 }
 
 @media (max-width: $responsive_start) {
-  ul#user_nav li {
-    display: block;
-    margin: 0;
-  }
-
-  ul#user_nav li.feed {
+  .begin {
     display: none;
   }
-
-  header.begin {
-    display: none;
-  }
-
-  nav.pagination {
+  .pagination {
     padding: 0 10px 0 10px;
   }
-
   #sidebar {
     padding-bottom: 10px;
   }
@@ -50,41 +42,24 @@
 }
 
 #menu {
-  padding: 0 30px;
   a {
-    display: inline-block;
-    font-size: 17px;
-    color: $lt_grey;
-    font-weight: 600;
+    display: block;
+    font-weight: 700;
     letter-spacing: 1px;
     margin-bottom: 17px;
     &:hover {
       color: #000;
-      border-color: #000;
     }
+  }
+  .active {
+    color: #000;
   }
   @media (max-width: $responsive_start) {
     padding: 0;
-    li {
-      display: block;
-      a {
-        display: block;
-        border: none;
-        position: relative;
-        margin: 0;
-        padding: 15px;
-        font-size: 20px;
-        border-radius: 0;
-        margin: 0 -10px 0 -10px;
-        &,
-        &:hover,
-        &.active {
-          border-top: 1px solid #e2e2e2 !important;
-        }
-      }
-      &.active {
-        border-top: none;
-      }
+    a {
+      border-top: 1px solid #e2e2e2;
+      margin: 0;
+      padding: 15px;
     }
   }
 }
@@ -92,22 +67,17 @@
 #social_icons {
   position: fixed;
   bottom: 0;
-  left: 0;
-  margin-bottom: 30px;
-  padding: 0 30px;
+  padding: 0 30px 30px;
   a {
-    text-align: center;
     margin-right: 10px;
     width: 35px;
     height: 35px;
     display: inline-block;
   }
   @media (max-width: $responsive_start) {
+    border-top: 1px solid #e2e2e2;
     position: relative;
-    display: inline-block;
     padding: 15px 0;
-    border-top: 1px solid #e2e2e2 !important;
-    width: 100%;
   }
 }
 
