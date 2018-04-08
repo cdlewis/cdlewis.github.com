@@ -3,7 +3,7 @@
 article {
   max-width: 600px;
   h2 {
-    margin-top: 0px;
+    margin-top: 0;
     a.anchor {
       border-bottom: 0;
       margin-left: 10px;
@@ -90,7 +90,7 @@ article {
       margin: 35px auto 30px;
     }
     blockquote {
-      margin: 0 0px 0 0px;
+      margin: 0;
       max-width: none;
       min-width: 0;
       padding: 0;
