@@ -120,14 +120,11 @@ section#river {
     text-align: center;
     padding: 0px 30px 0px 30px;
     a {
-        padding: 5px;
         text-align: center;
-        color: $lt_grey;
         margin-right: 10px;
-        svg {
-            width: 25px;
-            height: 25px;
-        }
+        width: 35px;
+        height: 35px;
+        display: inline-block;
     }
     &:hover {
         color: black;
@@ -140,6 +137,11 @@ section#river {
         border-top: 1px solid #e2e2e2 !important;
         width: 100%;
     }
+}
+
+// Path is only used in the social media icons
+path {
+    fill: #585858;
 }
 
 #open_menu:checked ~ #user_nav {

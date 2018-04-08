@@ -5,21 +5,18 @@ layout: compress
 ---
 
 <!DOCTYPE html>
-<html lang='en-US'>
+<html>
   <head>
     <meta charset='utf-8' />
-    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1.5, minimum-scale=0.5'>
+    <meta name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1.5,minimum-scale=0.5'>
     <link rel='icon' type='image/png' href='/assets/images/icon.png' />
     <title>{{page.title}}</title>
-    <link rel='profile' href='http://gmpg.org/xfn/11' />
-    <meta property='og:locale' content='en_US' />
     <meta property='og:type' content='website' />
-    <meta property='og:url' content='http://www.chrislewis.com.au/' />
+    <meta property='og:url' content='{{page.url}}' />
     <meta property='og:title' content="{{page.title}}" />
     <meta property='og:description' content='{{page.description}}' />
     <meta property='og:image' content='{{page.image}}' />
-    <meta property='fb:admins' content='{{site.author.facebook}}' />
-    <style type="text/css">{% include style.min.css %}</style>
+    <style>{% include style.min.css %}</style>
   </head>
   <body class="home blog">
     <header id="sidebar">
@@ -42,7 +39,6 @@ layout: compress
           <a href="http://www.twitter.com/{{ site.author.twitter }}">{% include images/twitter.svg %}</a>
           <a href="http://www.github.com/{{ site.author.github }}">{% include images/github.svg %}</a>
           <a href="http://www.linkedin.com/in/{{ site.author.linkedin }}">{% include images/linkedin.svg %}</a>
-          <a href="/pages/rss.xml">{% include images/feed.svg %}</a>
         </li>
       </ul>
     </header>
