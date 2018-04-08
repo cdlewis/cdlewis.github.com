@@ -1,7 +1,7 @@
+@import "constants";
+
 article {
-    h1, h2, h3, p, blockquote {
-        max-width: 600px;
-    }
+    max-width: 600px;
     h2 {
         margin-top: 0px;
         a.no-link {
@@ -27,7 +27,6 @@ article {
     	display: block;
     	padding: 0;
     	width: 100%;
-    	max-width: 600px;
     	float: none;
     }
     blockquote {
@@ -100,7 +99,7 @@ article {
     }
 }
 
-a.continue-reading {
+.continue-reading {
   padding: 7px 20px;
   border: 1px solid #e4e4e4;
   border-radius: 20px;
