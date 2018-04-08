@@ -1,123 +1,84 @@
 @import "constants";
 
 #logo {
-	top: 10px;
-	left: 10px;
-	width: 170px;
-	height: 170px;
-	padding: 0px 30px 0px 30px;
-	img {
-	    margin-top: 25px;
-	    max-width: 200px;
-	    width: 100%;
-	}
-	@media(min-width: $responsive_start) and (max-width:900px) {
-		width: 95px;
-		height: 95px;
-		a {
-			border-width: 5px;
-			top: 8px;
-			left: 8px
-		}
-	}
-	@media(max-width: $responsive_start) {
-		width: 30px;
-		height: 30px;
-		float: left;
-		padding: 0 0 0 15px;
-		margin: 0 auto;
-		position: relative;
-		left: auto;
-		right: auto;
-		top: 0;
-		img {
-			margin-top: 0px;
-		}
-	}
+  top: 10px;
+  left: 10px;
+  padding: 0 30px;
+  img {
+    margin-top: 25px;
+    max-width: 200px;
+    width: 100%;
+  }
+  @media (max-width: $responsive_start) {
+    width: 30px;
+    height: 30px;
+    float: left;
+    padding: 0 0 0 15px;
+    margin: 0 auto;
+    position: relative;
+    left: auto;
+    right: auto;
+    top: 0;
+    img {
+      margin-top: 0px;
+    }
+  }
 }
 
 #sidebar {
-	position: fixed;
-	width: 26%;
-    z-index: 1;
-    a.active {
-        color: black !important;
-        border-color: black !important;
-    }
+  position: fixed;
+  width: 26%;
+  a.active {
+    color: #000;
+  }
+  h1 {
+    color: #585858;
+    font-weight: bold;
+    line-height: 30px;
+    margin-top: 30px;
+  }
+  @media (max-width: $responsive_start) {
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+    min-height: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #fffe;
+    border-bottom: 1px solid #e2e2e2;
+    padding-top: 15px;
     h1 {
-        width: 75%;
-        color: #585858;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        font-size: 30px;
-        font-weight: bold;
-        line-height: 30px;
+      margin: 0;
+      display: inline;
+      float: left;
+      padding-left: 10px;
+      font-size: 25px;
     }
-    @media( max-width: $responsive_start ) {
-        display: block;
-        position: fixed;
-        top: 0px;
-        left: 0px;
-        z-index: 99;
-        min-height: 0;
-        width: 100%;
-        margin: 0;
-        float: none;
-        text-align: center;
-        background-color: #FFFE;
-        overflow: hidden;
-        border-bottom: 1px solid #e2e2e2;
-        padding-top: 15px;
-        padding-right: 10px;
-    	h1, h2, h3 {
-            max-width: 70%;
-            width: auto;
-            margin: 0 auto;
-        }
-        h1 {
-            display: inline-block;
-            float: left;
-            padding-left: 0px;
-            margin-left: 10px;
-            font-size: 25px;
-        }
-    	h2 {
-            margin-top: 2px
-        }
-    	h3 {
-            margin-top: 5px;
-            font-size: 15px;
-            margin-bottom: 15px;
-        }
-    }
+  }
 }
 
 #mobile_menu {
-	display: none;
-	float: right;
-	margin-right: 15px;
-	top: -2px;
-	position: relative;
-	svg {
-		width: 20px;
-		height: 20px;
-	}
-	@media( max-width: $responsive_start ) {
-		display: block;
-	}
+  display: none;
+  float: right;
+  margin-right: 15px;
+  font-size: 20px;
+  @media (max-width: $responsive_start) {
+    display: block;
+  }
 }
 
-@media( min-width: $full_screen ) {
-    h1, #user_nav {
-        margin-left: 28px;
-    }
+@media (min-width: $full_screen) {
+  h1,
+  #user_nav {
+    margin-left: 28px;
+  }
 }
 
 /* Only top and bottom padding for first header */
 #river > header:first-child {
-    padding: 40px 0 40px 40px;
+  padding: 40px 0 40px 40px;
 }
 
 #top_time {
-	font-weight: 700;
+  font-weight: 700;
 }

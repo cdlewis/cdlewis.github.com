@@ -5,91 +5,92 @@
 @import "footer";
 
 html {
-    font-size: 100%;
-    -webkit-text-size-adjust: 100%;
-    font-family: $body_font;
-    color: #222;
-    body {
-        margin: 0;
-        font-size: 1em;
-        line-height: 1.4;
-        @media( max-width: $responsive_start ) {
-            padding-top: 58px;
-        }
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: $body_font;
+  body {
+    margin: 0;
+    @media (max-width: $responsive_start) {
+      padding-top: 58px;
     }
+  }
 }
 
 a {
+  color: $lt_grey;
+  &:visited {
     color: $lt_grey;
-    &:visited {
-        color: $lt_grey;
-    }
-    &:hover {
-        color: black;
-    }
-    &:focus {
-        outline: thin dotted;
-    }
-    &:hover, &:active {
-        outline: 0;
-    }
+  }
+  &:hover {
+    color: black;
+  }
+  &:focus {
+    outline: thin dotted;
+  }
+  &:hover,
+  &:active {
+    outline: 0;
+  }
 }
 
 ul {
-    margin: 0;
-    padding:0;
-    list-style: none;
-    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  list-style-type: none;
 }
 
 nav ul {
-    list-style: none;
-    list-style-image: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
 }
 
 img {
-    border: 0;
-    vertical-align: middle;
+  border: 0;
+  vertical-align: middle;
 }
 
 figure {
-    margin: 0;
+  margin: 0;
 }
 
 p {
-	font-size: 15px;
-	line-height: 23px;
+  font-size: 15px;
+  line-height: 23px;
   margin: 20px 0 20px 0;
-	color: #4d4d4d;
-	text-align: justify;
+  color: #4d4d4d;
+  text-align: justify;
 }
 
 em {
-    font-style: italic;
+  font-style: italic;
 }
 
 strong {
-    font-weight: bold;
-    color: #333;
+  font-weight: bold;
+  color: #333;
 }
 
 small {
-    font-size: 80%;
+  font-size: 80%;
 }
 
 .hidden {
   display: none;
 }
 
-a:link, a:visited, a:hover, a:active {
-    text-decoration: none;
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
 }
 
-.menu li{
-    line-height: 18px;
-    margin-bottom: 12px;
+.menu li {
+  line-height: 18px;
+  margin-bottom: 12px;
 }
 
 /* Logo */
@@ -100,19 +101,20 @@ header h1 {
 
 /* Responsive Stuff */
 
-section article.post p, section article.post li {
-	font-size: 17px;
-	line-height: 27px;
+section article.post p,
+section article.post li {
+  font-size: 17px;
+  line-height: 27px;
 }
 
-@media( max-width: $responsive_start ) {
-    article {
-        padding: 15px;
-        img {
-            width: 100%;
-        }
-        &.post:first-of-type {
-            border: none;
-        }
+@media (max-width: $responsive_start) {
+  article {
+    padding: 15px;
+    img {
+      width: 100%;
     }
+    &.post:first-of-type {
+      border: none;
+    }
+  }
 }
