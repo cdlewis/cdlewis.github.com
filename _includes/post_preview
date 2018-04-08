@@ -8,5 +8,5 @@
     <a href="{{ page.url }}" class="no-link" title="Permalink to {{ page.title }}" rel="bookmark">{{ page.title }}</a>
   </h2>
   {{page.excerpt}}
-  <a href="{{ page.url }}" class="continue-reading">Continue reading</a>
+  <br /><a href="{{ page.url }}" class="continue-reading">Continue reading</a>
 </article>

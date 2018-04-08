@@ -18,3 +18,9 @@ author:
     twitter: chrislewis_aus
     facebook: chris.lewis2
     linkedin: cdlewis
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  blanklines: false
+  startings: [html, head, body]
