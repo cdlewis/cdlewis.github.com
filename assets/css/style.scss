@@ -57,7 +57,6 @@ figure {
 }
 
 p {
-  font-size: 15px;
   line-height: 23px;
   margin: 20px 0 20px 0;
   color: #4d4d4d;
@@ -96,25 +95,5 @@ a:active {
 /* Logo */
 
 header h1 {
-  padding: 0 30px 0 30px;
-}
-
-/* Responsive Stuff */
-
-section article.post p,
-section article.post li {
-  font-size: 17px;
-  line-height: 27px;
-}
-
-@media (max-width: $responsive_start) {
-  article {
-    padding: 15px;
-    img {
-      width: 100%;
-    }
-    &.post:first-of-type {
-      border: none;
-    }
-  }
+  padding: 0 30px;
 }

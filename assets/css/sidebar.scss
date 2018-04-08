@@ -1,3 +1,5 @@
+@import "constants";
+
 #river {
   margin-left: 26%;
   border-left: 1px solid #e3e3e3;
@@ -48,7 +50,7 @@
 }
 
 #menu {
-  padding: 0 30px 0 30px;
+  padding: 0 30px;
   a {
     display: inline-block;
     font-size: 17px;
@@ -92,7 +94,7 @@
   bottom: 0;
   left: 0;
   margin-bottom: 30px;
-  padding: 0 30px 0 30px;
+  padding: 0 30px;
   a {
     text-align: center;
     margin-right: 10px;
@@ -103,7 +105,7 @@
   @media (max-width: $responsive_start) {
     position: relative;
     display: inline-block;
-    padding: 15px 0 15px 0;
+    padding: 15px 0;
     border-top: 1px solid #e2e2e2 !important;
     width: 100%;
   }
