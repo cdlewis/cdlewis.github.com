@@ -18,11 +18,11 @@ layout: compress
     <style>{% include style.min.css %}</style>
   </head>
   <body>
-    <header id="sidebar">
+    <div id="sidebar">
       <figure id="logo">
         <a href="/">
           <picture>
-            <source srcset="/assets/images/developer-koala-mobile.webp" type="image/webp" media="(max-width: 500px)">
+            <source srcset="/assets/images/developer-koala-mobile.webp" type="image/webp" media="(max-width: 750px)">
             <source srcset="/assets/images/developer-koala.webp" type="image/webp">
             <img src="/assets/images/developer-koala.jpg" alt="developer koala" />
           </picture>
@@ -30,7 +30,7 @@ layout: compress
       </figure>
       <h1><a href="/">{{site.author.name}}</a></h1>
       <label for='open_menu' id='mobile_menu'>&#9776;</label>
-      <input type='checkbox' id='open_menu' class='hidden' />
+      <input type='checkbox' id='open_menu' />
       <div id="user_nav">
         <div id="menu">
           {% assign pages_list = site.pages %}{% assign group = 'navigation' %}{% include pages_list %}
@@ -40,8 +40,8 @@ layout: compress
           <a href="http://www.github.com/{{ site.author.github }}">{% include images/github.svg %}</a>
           <a href="http://www.linkedin.com/in/{{ site.author.linkedin }}">{% include images/linkedin.svg %}</a>
         </div>
+      </div>
     </div>
-    </header>
-    <section id="river">{{content}}</section>
+    <div id="main">{{content}}</div>
   </body>
 </html>

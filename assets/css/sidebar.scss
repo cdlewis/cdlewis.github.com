@@ -1,27 +1,8 @@
 @import "constants";
 
-#river {
+#main {
   margin-left: calc(26% + 60px);
   border-left: 1px solid #e3e3e3;
-  @media (max-width: $responsive_start) {
-    margin-left: 0;
-    border-left: none;
-  }
-  @media (max-width: $mobile_start) {
-    padding-top: 58px;
-  }
-}
-
-@media (max-width: $responsive_start) {
-  .begin {
-    display: none;
-  }
-  .pagination {
-    padding: 0 10px 0 10px;
-  }
-  #sidebar {
-    padding-bottom: 10px;
-  }
 }
 
 /* Navigation */
@@ -29,16 +10,8 @@
 #user_nav {
   position: relative;
   transition: max-height 0.4s ease-in-out;
-  overflow: hidden;
+  overflow: hidden; // Ensure menu is not visible until nav is expanded
   margin: 30px 0 0 0;
-  @media (max-width: $responsive_start) {
-    margin-top: 0;
-    float: right;
-    width: 100%;
-    padding: 0;
-    max-height: 0;
-    top: 6px;
-  }
 }
 
 #menu {
@@ -54,14 +27,6 @@
   .active {
     color: #000;
   }
-  @media (max-width: $responsive_start) {
-    padding: 0;
-    a {
-      border-top: 1px solid #e2e2e2;
-      margin: 0;
-      padding: 15px;
-    }
-  }
 }
 
 #social_icons {
@@ -74,18 +39,50 @@
     height: 35px;
     display: inline-block;
   }
-  @media (max-width: $responsive_start) {
-    border-top: 1px solid #e2e2e2;
-    position: relative;
-    padding: 15px 0;
-  }
 }
 
-// Path is only used in the social media icons
+// Ensure the correct colour is used for the social media icons
 path {
   fill: #585858;
 }
 
+// #open_menu is the checkbox used to control the mobile responsive menu
+#open_menu {
+  display: none;
+}
+
 #open_menu:checked ~ #user_nav {
   max-height: 50vh;
+}
+
+@media (max-width: $responsive_start) {
+  #top_time {
+    display: none;
+  }
+  .pagination {
+    padding: 0 10px 0 10px;
+  }
+  #main {
+    // Increase top margin to make the first post title visible
+    margin: 45px 0;
+    // Remove left sidebar border because there is no sidebar anymore
+    border: none;
+  }
+  #user_nav {
+    // Setting max height to 0 hides the menu until the checkbox is checked
+    max-height: 0;
+  }
+  #menu {
+    padding: 0;
+    a {
+      border-top: 1px solid #e2e2e2;
+      margin: 0;
+      padding: 15px;
+    }
+  }
+  #social_icons {
+    border-top: 1px solid #e2e2e2;
+    position: relative;
+    padding: 15px 0 0 0;
+  }
 }

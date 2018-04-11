@@ -1,11 +1,9 @@
-<header class="begin">
-  {% if forloop.index == null or forloop.first == true %}
-    <div id="top_time">{{page.date | date: "%-d %B %Y" }}</div>
-  {% endif %}
-</header>
-<article class="post">
+{% if forloop.index == null or forloop.first == true %}
+  <p id="top_time">{{page.date | date: "%-d %B %Y" }}</p>
+{% endif %}
+<div class="post">
   <h2 class="entry-title">
     <a href="{{ page.url }}">{{ page.title }}</a>
   </h2>
   {{page.content}}
-</article>
+</div>

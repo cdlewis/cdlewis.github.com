@@ -8,6 +8,8 @@ image: http://www.chrislewis.com.au/assets/images/developer-koala.jpg
 	{% include post_preview %}
 {% endfor %}
 
+{% if paginator.previous_page or paginator.next_page %}
+
 <nav class="pagination">
 
 {% if paginator.previous_page %}
@@ -32,3 +34,5 @@ image: http://www.chrislewis.com.au/assets/images/developer-koala.jpg
 {% endif %}
 
 </nav>
+
+{% endif %}
