@@ -9,17 +9,23 @@ body {
   margin: 0;
 }
 
+a,
+p,
+li {
+  color: #4d4d4d;
+}
+
 a {
-  color: $lt_grey;
   text-decoration: none;
-  &:hover {
+  &:hover,
+  .active {
     color: #000;
   }
 }
 
-p {
+p,
+li {
   line-height: 23px;
   margin: 20px 0;
-  color: #4d4d4d;
   text-align: justify;
 }

@@ -19,15 +19,13 @@ layout: compress
   </head>
   <body>
     <div id="sidebar">
-      <figure id="logo">
-        <a href="/">
-          <picture>
-            <source srcset="/assets/images/developer-koala-mobile.webp" type="image/webp" media="(max-width: 750px)">
-            <source srcset="/assets/images/developer-koala.webp" type="image/webp">
-            <img src="/assets/images/developer-koala.jpg" alt="developer koala" />
-          </picture>
-        </a>
-      </figure>
+      <a id="logo" href="/">
+        <picture>
+          <source srcset="/assets/images/developer-koala-mobile.webp" type="image/webp" media="(max-width: 750px)">
+          <source srcset="/assets/images/developer-koala.webp" type="image/webp">
+          <img src="/assets/images/developer-koala.jpg" />
+        </picture>
+      </a>
       <h1><a href="/">{{site.author.name}}</a></h1>
       <label for='open_menu' id='mobile_menu'>&#9776;</label>
       <input type='checkbox' id='open_menu' />
