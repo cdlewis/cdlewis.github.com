@@ -20,7 +20,7 @@ permalink: /pages/about/
 }
 </style>
 
-<img src='/assets/images/me.jpg' class='about_me_image' />
+<img src='/assets/images/me.jpg' class='about_me_image' alt="picture of me" />
 
 I live in San Francisco and work at Uber on [UberEATS](https://eats.uber.com/).
 
