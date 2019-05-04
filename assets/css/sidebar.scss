@@ -65,6 +65,8 @@ path {
   #user_nav {
     // Setting max height to 0 hides the menu until the checkbox is checked
     max-height: 0;
+    // Width 100% needed for iOS Safari
+    width: 100%;
   }
   #menu {
     padding: 0;
