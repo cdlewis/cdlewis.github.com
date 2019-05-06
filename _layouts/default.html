@@ -13,7 +13,7 @@ layout: compress
     <style>{% include style.min.css %}</style>
   </head>
   <body>
-    <div id="sidebar">
+    <div id="b">
       <a id="logo" href="/">
         <picture>
           <source srcset="/assets/images/developer-koala-mobile.webp" type="image/webp" media="(max-width: 750px)">
@@ -22,13 +22,13 @@ layout: compress
         </picture>
       </a>
       <h1><a href="/">{{site.author.name}}</a></h1>
-      <label for='open_menu' id='mobile_menu'>&#9776;</label>
-      <input type='checkbox' id='open_menu' />
-      <div id="user_nav">
-        <div id="menu">
+      <label for='o' id='m'>&#9776;</label>
+      <input type='checkbox' id='o' />
+      <div id="u">
+        <div id="e">
           {% assign pages_list = site.pages %}{% assign group = 'navigation' %}{% include pages_list %}
         </div>
-        <div id="social_icons">
+        <div id="s">
           <a href="http://www.twitter.com/{{ site.author.twitter }}" aria-label="twitter">{% include images/twitter.svg %}</a>
           <a href="http://www.github.com/{{ site.author.github }}" aria-label="github">{% include images/github.svg %}</a>
           <a href="http://www.linkedin.com/in/{{ site.author.linkedin }}" aria-label="linkedin">{% include images/linkedin.svg %}</a>
