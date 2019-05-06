@@ -9,59 +9,20 @@
   }
 }
 
-#sidebar {
-  position: fixed;
-  top: 0;
-  width: 26%;
-  margin: 0 30px;
+// menu bar
+#b {
+  padding: 24px 30px;
+  box-sizing: border-box;
+  border-right: 1px solid #e3e3e3;
+  position: sticky;
+  align-self: flex-start;
+  top: 0px;
+  height: 100vh;
 }
 
-#mobile_menu {
+// mobile menu
+#m {
   display: none;
   float: right;
   font-size: 20px;
-}
-
-/* Only top and bottom padding for first header */
-
-#top_time {
-  font-weight: 700;
-  padding: 40px;
-  margin: 0;
-}
-
-/* Responsive Changes */
-
-@media (max-width: $responsive_start) {
-  #logo {
-    float: left;
-    width: 30px;
-    img {
-      margin-top: 0;
-      height: 30px;
-      width: auto;
-    }
-  }
-
-  h1 {
-    font-size: 25px;
-    float: left;
-    margin: 0;
-    padding-left: 10px;
-  }
-
-  #sidebar {
-    margin: 0;
-    z-index: 9;
-    width: 100%;
-    text-align: center;
-    background-color: #fffe;
-    border-bottom: 1px solid #e2e2e2;
-    padding: 15px;
-    box-sizing: border-box;
-  }
-
-  #mobile_menu {
-    display: block;
-  }
 }

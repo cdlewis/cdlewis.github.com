@@ -1,20 +1,21 @@
 @import "constants";
 
 #main {
-  margin-left: calc(26% + 60px);
-  border-left: 1px solid #e3e3e3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
 }
 
 /* Navigation */
 
-#user_nav {
-  position: relative;
-  transition: max-height 0.4s ease-in-out;
+#u {
+  transition: max-height 0.3s ease-out;
   overflow: hidden; // Ensure menu is not visible until nav is expanded
-  margin: 30px 0 0 0;
 }
 
-#menu {
+// menu
+#e {
   a {
     display: block;
     font-weight: 700;
@@ -23,10 +24,10 @@
   }
 }
 
-#social_icons {
-  position: fixed;
+#s {
+  position: absolute;
   bottom: 0;
-  padding: 0 30px 30px;
+  padding-bottom: 24px;
   a {
     margin-right: 10px;
     width: 35px;
@@ -40,45 +41,11 @@ path {
   fill: #585858;
 }
 
-// #open_menu is the checkbox used to control the mobile responsive menu
-#open_menu {
+// #o is the checkbox used to control the mobile responsive menu
+#o {
   display: none;
 }
 
-#open_menu:checked ~ #user_nav {
+#o:checked ~ #u {
   max-height: 50vh;
-}
-
-@media (max-width: $responsive_start) {
-  #top_time {
-    display: none;
-  }
-  .pagination {
-    padding: 0 10px 0 10px;
-  }
-  #main {
-    // Increase top margin to make the first post title visible
-    margin: 45px 0;
-    // Remove left sidebar border because there is no sidebar anymore
-    border: none;
-  }
-  #user_nav {
-    // Setting max height to 0 hides the menu until the checkbox is checked
-    max-height: 0;
-    // Width 100% needed for iOS Safari
-    width: 100%;
-  }
-  #menu {
-    padding: 0;
-    a {
-      border-top: 1px solid #e2e2e2;
-      margin: 0;
-      padding: 15px;
-    }
-  }
-  #social_icons {
-    border-top: 1px solid #e2e2e2;
-    position: relative;
-    padding: 15px 0 0 0;
-  }
 }
