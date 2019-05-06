@@ -10,9 +10,12 @@
 /* Navigation */
 
 #user_nav {
-  transition: max-height 0.4s ease-in-out;
+  transition: max-height 0.3s ease-out;
   overflow: hidden; // Ensure menu is not visible until nav is expanded
-  margin: 30px 0 0 0;
+  position: absolute;
+  background-color: white;
+  left: 0;
+  top: 63px;
 }
 
 #menu {
