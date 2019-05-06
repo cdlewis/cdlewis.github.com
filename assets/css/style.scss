@@ -7,6 +7,7 @@
 body {
   font-family: $body_font;
   margin: 0;
+  display: flex;
 }
 
 a,
@@ -28,4 +29,84 @@ li {
   line-height: 23px;
   margin: 20px 0;
   text-align: justify;
+}
+
+@media (max-width: $responsive_start) {
+  body {
+    flex-direction: column;
+  }
+
+  .p {
+    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+
+    &.p:first-of-type {
+      border: none;
+    }
+  }
+
+  #logo {
+    float: left;
+    width: 30px;
+    img {
+      margin-top: 0;
+      height: 30px;
+      width: auto;
+    }
+  }
+
+  h1 {
+    font-size: 25px;
+    float: left;
+    margin: 0;
+    padding-left: 10px;
+  }
+
+  #b {
+    margin: 0;
+    z-index: 9;
+    width: 100%;
+    text-align: center;
+    background-color: #fffe;
+    border-bottom: 1px solid #e2e2e2;
+    padding: 15px;
+    box-sizing: border-box;
+    height: auto;
+  }
+
+  #m {
+    display: block;
+  }
+
+  .pagination {
+    padding: 0 10px;
+  }
+  #main {
+    // Remove left sidebar border because there is no sidebar anymore
+    border: none;
+  }
+  #u {
+    // Setting max height to 0 hides the menu until the checkbox is checked
+    max-height: 0;
+    // Width 100% needed for iOS Safari
+    width: 100%;
+    position: absolute;
+    background-color: #fffe;
+    left: 0;
+    top: 63px;
+  }
+  #e {
+    padding: 0;
+    a {
+      border-top: 1px solid #e2e2e2;
+      margin: 0;
+      padding: 15px;
+    }
+  }
+  #s {
+    border-top: 1px solid #e2e2e2;
+    position: relative;
+    padding: 5px;
+  }
 }

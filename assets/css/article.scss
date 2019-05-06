@@ -4,17 +4,11 @@ img {
   width: 100%;
 }
 
-.post {
+.p {
   max-width: 600px;
   padding: 24px 40px;
-  border-top: 1px solid #e2e2e2;
-  @media (max-width: $responsive_start) {
-    padding: 15px;
-    &.post:first-of-type {
-      border: none;
-    }
-  }
 
+  // 'Read more' link
   p:last-child a:last-child {
     display: block;
     margin-top: 40px;
