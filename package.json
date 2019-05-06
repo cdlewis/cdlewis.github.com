@@ -20,8 +20,8 @@
   },
   "homepage": "http://chrislewis.com.au",
   "dependencies": {
-    "husky": "^2.1.0",
-    "lint-staged": "^8.1.5",
+    "husky": "^2.2.0",
+    "lint-staged": "^8.1.6",
     "node-sass": "^4.8.3",
     "prettier": "^1.11.1"
   },
