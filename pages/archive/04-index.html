@@ -3,8 +3,9 @@ layout: page
 title : Archives
 header : Post Archive
 group: navigation
-permalink: /pages/archive/
+permalink: /archive/
 ---
 
-{% assign posts_collate = site.posts %}
-{% include posts_collate %}
+{% for post in site.posts %}
+  <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a><br /><br />
+{% endfor %}

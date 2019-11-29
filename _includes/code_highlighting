@@ -1,1 +1,7 @@
 <link rel="stylesheet" type="text/css" href="/assets/css/highlight.min.css" />
+<style type="text/css">
+.highlight .p {
+    max-width: auto !important;
+    padding: inherit !important;
+}
+</style>

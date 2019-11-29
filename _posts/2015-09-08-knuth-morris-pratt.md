@@ -3,17 +3,17 @@ layout: post
 title: Finding DNA Subsequences with Knuth-Morris-Pratt
 description: A Python implementation of KMP search on DNA.
 category:
-image: http://www.chrislewis.com.au/assets/images/2015-08-30/DFA.jpg
+image: http://www.chrislewis.com.au/images/2015-08-30/DFA.jpg
 tags: [algorithms]
 ---
 
-Substring searching has become so ubiquitous in recent years that it's easy to take for granted the beauty and ingenuity of automata-based pattern matching. Remarkably, the importance of these algorithms has, if anything, continued to grow. Knuth-Morris-Pratt (KMP) was published in 1974 but [Skiena’s ‘killer applications’ for string processing](http://www.algorithm.cs.sunysb.edu/computationalbiology/pdf/lecture8.pdf) — online search and computational biology — wouldn’t emerge until decades later.
+Substring searching has become so ubiquitous in recent years that it's easy to take for granted the beauty and ingenuity of automata-based pattern matching. Remarkably, the importance of these algorithms has, if anything, continued to grow. Knuth-Morris-Pratt (KMP) was published in 1974 but [Skiena’s ‘killer applications’ for string processing](/r?skiena) — online search and computational biology — wouldn’t emerge until decades later.
 
 The key insight behind KMP is that it's never necessary to backtrack when searching the text. Examining each character once is enough. Consequently the algorithmic complexity is reduced from O(mn) in the naïve case to O(m+n). KMP achieves this by re-framing the problem. Rather than whether a substring exists, it asks: what currently is the longest prefix of the pattern that is also a suffix of the input string?  Substrings can then be detected by checking whether the prefix length is equal to the pattern length.
 
 <!--break-->
 
-![dfa representing nucleotide pattern](/assets/images/2015-08-30/DFA.jpg)
+![dfa representing nucleotide pattern](/images/2015-08-30/DFA.jpg)
 A DFA representing the pattern 'ATGATC'. States indicate partial matches so, for example, being in state two indicates that the last two characters were 'AT'.
 {: .caption}
 

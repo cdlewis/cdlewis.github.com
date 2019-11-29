@@ -3,7 +3,7 @@ layout: page
 title: "About Me"
 description: "Information about me and my blag."
 group: navigation
-permalink: /pages/about/
+permalink: /about/
 ---
 
 <style type="text/css">
@@ -20,9 +20,9 @@ permalink: /pages/about/
 }
 </style>
 
-<img src='/assets/images/me.jpg' class='about_me_image' alt="picture of me" />
+<img src='/images/me.jpg' class='about_me_image' alt="picture of me" />
 
-I live in San Francisco and work at Uber on [Uber Eats](https://www.ubereats.com.com/).
+I live in New York and work at Uber on [Uber Eats](https://www.ubereats.com.com/).
 
 I really like Javascript and am interested in tools we can use to make it safer, such as type checking. As well as abstractions to make our code more scalable and maintainable.
 

@@ -8,8 +8,8 @@ tags: [react-native, flow, redux-saga]
 ---
 
 <picture>
-  <source srcset="/assets/images/2017-03-28/header.webp" type="image/webp">
-  <img src="/assets/images/2017-03-28/header.jpg" alt="ubereats">
+  <source srcset="/images/2017-03-28/header.webp" type="image/webp">
+  <img src="/images/2017-03-28/header.jpg" alt="ubereats">
 </picture>
 
 *I originally wrote this article for the [Uber engineering blog](https://eng.uber.com/ubereats-react-native/).*
@@ -22,7 +22,7 @@ Fortunately, we were able to get UberEATS up and running quickly by leveraging m
 
 ## Building Restaurant Dashboard
 
-![The UberEATS marketplace includes three parties: restaurants, delivery-partners and eaters. This new dynamic turns Uber’s traditional two-sided model on its head.](/assets/images/2017-03-28/figure1.png)
+![The UberEATS marketplace includes three parties: restaurants, delivery-partners and eaters. This new dynamic turns Uber’s traditional two-sided model on its head.](/images/2017-03-28/figure1.png)
 
 Restaurants need a way to communicate with both delivery-partners and eaters. At a bare minimum, the parties need to relay the:
 
@@ -33,7 +33,7 @@ Restaurants need a way to communicate with both delivery-partners and eaters. At
 
 These four basic demands gave rise to the Restaurant Dashboard, a React/Flux single-page web application accessed through tablet devices.
 
-![A Restaurant Dashboard showing one active order.](/assets/images/2017-03-28/figure2.png)
+![A Restaurant Dashboard showing one active order.](/images/2017-03-28/figure2.png)
 
 ## Revamping Restaurant Dashboard for the Next 50 Cities
 
@@ -41,7 +41,7 @@ Since the standalone app’s [initial launch](https://newsroom.uber.com/canada/u
 
 Our web app only provided limited access to the device, which proved to be a significant problem because it restricted our ability to communicate important information to restaurants. One example of this is that a user must interact with a web page before sound-based notifications can be cued. Restaurants are bustling with activity, so sound is a hugely important way to notify restaurant employees about the placement of a new order or when a delivery-partner has arrived to pick one up. To solve this issue, we displayed a modal each time the page was loaded in order to force user interaction. While this gave us implicit permission to play sound, it did so at the expense of the user experience.
 
-![Restaurant Dashboard showing a modal to force user interaction and therefore enable sound.](/assets/images/2017-03-28/figure3.png)
+![Restaurant Dashboard showing a modal to force user interaction and therefore enable sound.](/images/2017-03-28/figure3.png)
 
 We also needed to build some features that simply were not feasible on a web browser or were only available in a highly constrained format. For example, printing physical receipts is a given for many restaurants, but web browsers only permit the function for those that use AirPrint-compatible printers. This limitation was a great source of confusion and frustration for restaurants and engineers alike. We realised that in order to overcome this hurdle, we would need access to the hardware, which would allow us to communicate directly with printers using native SDKs provided by printer vendors.
 
@@ -59,7 +59,7 @@ Overall, the demo was able to deliver our desired outcome. Libraries like crash 
 
 The initial goal was to build the bare minimum amount of scaffolding needed to get Restaurant Dashboard running natively. In order to accomplish this, we created a native navigation and authentication system along with a WebView pointing to our existing web app.
 
-![The above diagram showcases interaction between the native and web Restaurant Dashboard Flux stores.](/assets/images/2017-03-28/figure4.png)
+![The above diagram showcases interaction between the native and web Restaurant Dashboard Flux stores.](/images/2017-03-28/figure4.png)
 
 Network requests from the WebView were altered using NSURLProtocol in order to have the necessary authentication headers. Additional hooks were added to the window, which allowed us to update the web-based Restaurant Dashboard’s flux store by injecting JavaScript into the WebView. This gave us a lot of flexibility in terms of gradually migrating functionality.
 
@@ -93,7 +93,7 @@ React Native applications are bootstrapped by a small amount of Objective-C/Java
 
 To keep our update logic platform-agnostic, we chose to take it one step further and create a native wrapper around the bridge, allowing the JavaScript bundle itself to determine which bundle is loaded.
 
-![Restaurant Dashboard can store up to three JavaScript bundles at any given time.](/assets/images/2017-03-28/figure5.png)
+![Restaurant Dashboard can store up to three JavaScript bundles at any given time.](/images/2017-03-28/figure5.png)
 
 Restaurant Dashboard periodically checks for new bundles and automatically downloads them. Both the native code and the bundle code follow semantic versioning, assigning unique identification to each new deployment, and a change is considered breaking if it changes the Native – JavaScript communication interface. For example, renaming the Analytics module to AnalyticsV2 would be considered a breaking change because existing calls from the JavaScript bundle to Analytics would trigger an exception.
 
@@ -101,7 +101,7 @@ Of course, even with the most careful attention to semantic versioning, a bad up
 
 One way of avoiding the deployment of bad updates is to treat every release as an experiment, which allows for a gradual rollout and, if necessary, a rollback of updates.
 
-![The Restaurant Dashboard’s rollback process determines which bundle to load.](/assets/images/2017-03-28/figure6.png)
+![The Restaurant Dashboard’s rollback process determines which bundle to load.](/images/2017-03-28/figure6.png)
 
 For the rollback process to work properly, Restaurant Dashboard needs to recognise that it has a bad bundle and then reload a ‘safe’ bundle (meaning, a bundle we know to be error-free, such as the bundle originally shipped with the app), otherwise it will not be able to find out which version of the software to roll back to. We achieve this by automatically reloading the original JavaScript bundle that came packaged with the application, and then loading one of two pushed bundles: the latest safe bundle or the most recent bundle. If the most recent bundle can be loaded, it graduates to being the safe bundle. In the event that no safe bundle exists, the original one remains in use with no updates.
 
@@ -152,7 +152,7 @@ Restaurant Dashboard uses Redux for managing the flow of data. Redux provides us
 
 It is often necessary to alter the store in response to asynchronous actions, such as network requests. Redux does not prescribe a way of doing this, but a common approach is to use Thunks, a middleware for Redux that allows actions to be functions that return a promise and dispatch additional actions along the way.
 
-![In Restaurant Dashboard, data flows through a Redux application.](/assets/images/2017-03-28/figure7.png)
+![In Restaurant Dashboard, data flows through a Redux application.](/images/2017-03-28/figure7.png)
 
 Our initial approach was to use Thunks, but we quickly ran into problems as our application logic (and side effects) became more complicated. Specifically, we encountered two side effect patterns that did not naturally fit into the Thunk model:
 
