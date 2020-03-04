@@ -11,5 +11,5 @@ Thumbs.db
 .rvmrc
 Gemfile.lock
 .jekyll-metadata
-
+npm-debug.log
 node_modules/*
