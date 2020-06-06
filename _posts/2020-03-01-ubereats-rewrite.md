@@ -7,10 +7,12 @@ image:
 tags: [react]
 ---
 
-<picture>
-  <source srcset="/images/2020-03-01/header.webp" type="image/webp">
-  <img src="/images/2020-03-01/header.jpg" alt="ubereats">
-</picture>
+<div class="cn">
+  <picture>
+    <source srcset="/images/2020-03-01/header.webp" type="image/webp">
+    <img src="/images/2020-03-01/header.jpg" alt="ubereats">
+  </picture>
+</div>
 
 *I originally wrote this article for the [Uber engineering blog](https://eng.uber.com/uber-eats-com-web-app-rewrite/).*
 

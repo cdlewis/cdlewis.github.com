@@ -8,6 +8,18 @@ body {
   font-family: $body_font;
   margin: 0;
   display: flex;
+
+  // Make everything pretty
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 18px;
 }
 
 a,
@@ -26,7 +38,7 @@ a {
 
 p,
 li {
-  line-height: 23px;
+  line-height: 28px;
   margin: 20px 0;
   text-align: justify;
 }

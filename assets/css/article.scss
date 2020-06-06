@@ -1,7 +1,11 @@
 @import "constants";
 
 img {
-  width: 100%;
+  max-width: 100%;
+
+  // Ensure non max width images are centered and captions are on the next line
+  display: block;
+  margin: 0 auto;
 }
 
 p a {
@@ -9,7 +13,7 @@ p a {
 }
 
 .p {
-  max-width: 600px;
+  max-width: 800px;
   padding: 24px 40px;
 
   // 'Read more' link
@@ -17,10 +21,16 @@ p a {
     display: block;
     margin-top: 40px;
     font-weight: 700;
+    text-decoration: none;
   }
 }
 
 .caption {
   font-size: 80%;
+  text-align: center;
+}
+
+.cn {
+  width: 100%;
   text-align: center;
 }
