@@ -3,14 +3,11 @@ layout: post
 title: Powering UberEATS with React Native
 description:
 category:
-image:
+image: /images/2017-03-28/header
+imageWidth: 800
+imageHeight: 343
 tags: [react-native, flow, redux-saga]
 ---
-
-<picture>
-  <source srcset="/images/2017-03-28/header.webp" type="image/webp">
-  <img src="/images/2017-03-28/header.jpg" alt="ubereats">
-</picture>
 
 *I originally wrote this article for the [Uber engineering blog](https://eng.uber.com/ubereats-react-native/).*
 

@@ -10,7 +10,7 @@ layout: compress
     <meta name='description' content="{{page.description}}" />
     <link rel='icon' type='image/png' href='/images/icon.png' />
     <title>{{page.title}}</title>
-    <style>{% include style.min.css %}</style>
+    {% capture styles %}{% include css/style.scss %}{% endcapture %}<style>{{ styles | scssify }}</style>
   </head>
   <body>
     <div id="b">

@@ -2,7 +2,7 @@
 layout: post
 title: Disjoint-Sets and Agglomerative Clustering
 description: Application of disjoint sets to agglomerative clustering.
-image: http://www.chrislewis.com.au/images/2014-03-23/disjoint_set_representation.png
+image:
 category:
 tags: [algorithms]
 ---

@@ -1,8 +1,8 @@
-@import "constants";
-@import "article";
-@import "sidebar";
-@import "header";
-@import "footer";
+@import "./constants.scss";
+@import "./article.scss";
+@import "./sidebar.scss";
+@import "./header.scss";
+@import "./article.scss";
 
 body {
   font-family: $body_font;
@@ -61,6 +61,7 @@ li {
   #logo {
     float: left;
     width: 30px;
+    height: 27px; // Harcode height to eliminate layout shifts during rendering
     img {
       margin-top: 0;
       height: 30px;

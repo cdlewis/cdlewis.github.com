@@ -24,3 +24,7 @@ compress_html:
   endings: all
   blanklines: false
   startings: [html, head, body]
+sass:
+    sass_dir: ./_includes/css
+plugins:
+  - jekyll-paginate

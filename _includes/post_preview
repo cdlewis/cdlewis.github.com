@@ -2,6 +2,7 @@
   <h2>
     <a href="{{ page.url }}">{{ page.title }}</a>
   </h2>
+  {% include post_header_image %}
   {{page.excerpt}}
   <a href="{{ page.url }}">Continue reading &#187;</a>
 </div>

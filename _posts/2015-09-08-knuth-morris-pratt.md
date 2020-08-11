@@ -3,7 +3,7 @@ layout: post
 title: Finding DNA Subsequences with Knuth-Morris-Pratt
 description: A Python implementation of KMP search on DNA.
 category:
-image: http://www.chrislewis.com.au/images/2015-08-30/DFA.jpg
+image:
 tags: [algorithms]
 ---
 

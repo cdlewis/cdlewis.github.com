@@ -1,0 +1,13 @@
+{% if page.image %}
+{% assign heightFloat = page.imageHeight | times: 1.0 %}
+{% assign widthFloat = page.imageWidth | times: 1.0 %}
+{% assign aspectRatio = heightFloat | divided_by: widthFloat %}
+<div style="width: 600px; max-width: 100%; margin: 0 auto;">
+    <div style="with: 100%; height: 0; padding-top: {{ aspectRatio | times: 100}}%; position: relative">
+        <picture style="position: absolute; top: 0; right: 0; bottom: 0; left: 0">
+            <source srcset="{{ page.image }}.webp" type="image/webp">
+            <img src="{{ page.image }}.jpg" alt="{{ page.title }}">
+        </picture>
+    </div>
+</div>
+{% endif %}

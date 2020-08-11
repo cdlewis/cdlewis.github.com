@@ -1,15 +1,10 @@
 _site/*
 _theme_packages/*
 _drafts/*
-.sass-cache/*
 Thumbs.db
 .DS_Store
-
 !.gitkeep
-
 .rbenv-version
 .rvmrc
-Gemfile.lock
 .jekyll-metadata
-npm-debug.log
-node_modules/*
+.vscode

@@ -2,5 +2,6 @@
   <h2>
     <a href="{{ page.url }}">{{ page.title }}</a>
   </h2>
+  {% include post_header_image %}
   {{page.content}}
 </div>
