@@ -26,5 +26,6 @@ compress_html:
   startings: [html, head, body]
 sass:
     sass_dir: ./_includes/css
+    style: compressed
 plugins:
   - jekyll-paginate
