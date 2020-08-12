@@ -1,6 +1,6 @@
-version: 2
+version: 4.1.1
 permalink: /:categories/:year/:month/:day/:title
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "node_modules"]
+exclude: ["README.md", "changelog.md"]
 relative_permalinks: false
 paginate: 5
 markdown: kramdown
