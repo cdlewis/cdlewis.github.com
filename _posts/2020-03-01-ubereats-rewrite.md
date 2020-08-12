@@ -6,6 +6,7 @@ category:
 image: /images/2020-03-01/header
 imageWidth: 600
 imageHeight: 442
+highRes: true
 tags: [react]
 ---
 
