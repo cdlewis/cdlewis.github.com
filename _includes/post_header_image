@@ -3,7 +3,7 @@
 {% assign widthFloat = page.imageWidth | times: 1.0 %}
 {% assign aspectRatio = heightFloat | divided_by: widthFloat %}
 <div style="width: {{ page.imageWidth }}px; max-width: 100%; margin: 0 auto;">
-    <div style="with: 100%; height: 0; padding-top: {{ aspectRatio | times: 100}}%; position: relative">
+    <div style="with: 100%; height: 0; padding-top: {{ aspectRatio | times: 100 | round}}%; position: relative">
         <picture style="position: absolute; top: 0; right: 0; bottom: 0; left: 0">
             {% if page.highRes %}
                 <source srcset="{{ page.image }}-2x.webp" type="image/webp" media="(min-resolution: 2dppx)">
