@@ -24,6 +24,6 @@ permalink: /about/
 
 I live in New York and work at Uber on [Uber Eats](https://www.ubereats.com/).
 
-I really like Javascript and am interested in tools we can use to make it safer, such as type checking. As well as abstractions to make our code more scalable and maintainable.
+I really like Javascript and am interested in tools we can use to make it safer, such as type checking, as well as abstractions to make our code more scalable and maintainable.
 
 Before moving to the United States, I spent way too much time in school; eventually graduating with degrees in computer science and law.
