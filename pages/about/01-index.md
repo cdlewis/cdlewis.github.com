@@ -22,8 +22,8 @@ permalink: /about/
 
 <img src='/images/me.jpg' class='about_me_image' alt="picture of me" />
 
-I live in New York and work at Uber on [Uber Eats](https://www.ubereats.com/).
+I live in New York and work at [Twitter](https://www.twitter.com) on the Timelines Infrastructure team.
 
-I really like Javascript and am interested in tools we can use to make it safer, such as type checking, as well as abstractions to make our code more scalable and maintainable.
+Prior to joining Twitter, I helped build and launch [Uber Eats](https://www.ubereats.com/).
 
 Before moving to the United States, I spent way too much time in school; eventually graduating with degrees in computer science and law.
