@@ -22,7 +22,7 @@ permalink: /about/
 
 <img src='/images/me.jpg' class='about_me_image' alt="picture of me" />
 
-I live in New York and work at [Twitter](https://www.twitter.com) on the Timelines Infrastructure team.
+I work at [Twitter](https://www.twitter.com) on the Timelines Infrastructure team.
 
 Prior to joining Twitter, I helped build and launch [Uber Eats](https://www.ubereats.com/).
 
