@@ -26,4 +26,4 @@ I work at [Twitter](https://www.twitter.com) on the Timelines Infrastructure tea
 
 Prior to joining Twitter, I helped build and launch [Uber Eats](https://www.ubereats.com/).
 
-Before moving to the United States, I spent way too much time in school; eventually graduating with degrees in computer science and law.
+I spent way too much time in school; eventually graduating with degrees in computer science and law.
