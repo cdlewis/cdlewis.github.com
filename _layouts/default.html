@@ -9,31 +9,11 @@ layout: compress
     <meta name='viewport' content='width=device-width'>
     <meta name='description' content="{{page.description}}" />
     <link rel='icon' type='image/png' href='/images/icon.png' />
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:700,700italic,400,400italic" rel="stylesheet" type="text/css">
     <title>{{page.title}}</title>
     {% capture styles %}{% include css/style.scss %}{% endcapture %}<style>{{ styles | scssify }}</style>
   </head>
   <body>
-    <div id="b">
-      <a id="logo" href="/">
-        <picture>
-          <source srcset="/images/developer-koala-mobile-2k.webp" type="image/webp" media="(max-width: 750px) and (min-resolution: 2dppx)">
-          <source srcset="/images/developer-koala-mobile.webp" type="image/webp" media="(max-width: 750px)">
-          <source srcset="/images/developer-koala-2x.webp" type="image/webp" media="(min-resolution: 2dppx)">
-          <source srcset="/images/developer-koala.webp" type="image/webp">
-          <img alt="koala" src="/images/developer-koala.jpg" />
-        </picture>
-      </a>
-      <h1><a href="/">{{site.author.name}}</a></h1>
-      <label for='o' id='m'>&#9776;</label>
-      <input type='checkbox' id='o' />
-      <div id="u">
-        <div id="e">
-          {% assign pages_list = site.pages %}{% assign group = 'navigation' %}{% include pages_list %}
-        </div>
-        <div id="s">
-        </div>
-      </div>
-    </div>
-    <div id="main">{{content}}</div>
+    {{content}}
   </body>
 </html>

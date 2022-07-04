@@ -1,15 +1,15 @@
-{% if page.image %}
-{% assign heightFloat = page.imageHeight | times: 1.0 %}
-{% assign widthFloat = page.imageWidth | times: 1.0 %}
+{% if post.image %}
+{% assign heightFloat = post.imageHeight | times: 1.0 %}
+{% assign widthFloat = post.imageWidth | times: 1.0 %}
 {% assign aspectRatio = heightFloat | divided_by: widthFloat %}
-<div class="i0" style="width: {{ page.imageWidth }}px">
+<div class="i0" style="width: {{ post.imageWidth }}px">
     <div class="i1" style="padding-top: {{ aspectRatio | times: 100 | round}}%">
         <picture class="i2">
-            {% if page.highRes %}
-                <source srcset="{{ page.image }}-2x.webp" type="image/webp" media="(min-resolution: 2dppx)">
+            {% if post.highRes %}
+                <source srcset="{{ post.image }}-2x.webp" type="image/webp" media="(min-resolution: 2dppx)">
             {% endif %}
-            <source srcset="{{ page.image }}.webp" type="image/webp">
-            <img src="{{ page.image }}.jpg" alt="{{ page.title }}">
+            <source srcset="{{ post.image }}.webp" type="image/webp">
+            <img src="{{ post.image }}.jpg" alt="{{ post.title }}">
         </picture>
     </div>
 </div>
