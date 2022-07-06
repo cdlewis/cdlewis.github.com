@@ -1,12 +1,7 @@
 ---
 layout: default
 ---
-
-<section>
-  <div class="p">
-    <h2>
-      <a href="{{ page.url }}">{{ page.title }}</a>
-    </h2>
-    {{ content }}
-  </div>
-</section>
+{% capture styles %}{% include css/post.scss %}{% endcapture %}<style>{{ styles | scssify }}</style>
+<div class="p">
+  {{ content }}
+</div>

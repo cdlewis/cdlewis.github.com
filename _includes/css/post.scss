@@ -1,0 +1,179 @@
+@import "./constants.scss";
+@import "./sidebar.scss";
+@import "./header.scss";
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+  font-size: 18px;
+}
+
+a,
+p,
+li {
+  color: #4d4d4d;
+}
+
+a {
+  text-decoration: none;
+  &:hover,
+  .active {
+    color: #000;
+  }
+}
+
+p,
+li {
+  line-height: 28px;
+  margin: 20px 0;
+}
+
+/* Article Rules */
+
+img {
+  max-width: 100%;
+
+  // Ensure non max width images are centered and captions are on the next line
+  display: block;
+  margin: 0 auto;
+}
+
+p a {
+  text-decoration: underline;
+}
+
+.p {
+  max-width: 800px;
+  padding: 24px 0px;
+  margin: 0 auto;
+
+  // 'Read more' link
+  p:last-child a:last-child {
+    display: block;
+    margin-top: 40px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  p:last-child {
+    padding-bottom: 49px;
+  }
+}
+
+.caption {
+  font-size: 80%;
+  text-align: center;
+}
+
+// Responsive
+
+@media (max-width: $responsive_start) {
+  body {
+    flex-direction: column;
+  }
+
+  .p {
+    padding: 0px 15px;
+    box-sizing: border-box;
+    width: 100%;
+
+    &.p:first-of-type {
+      border: none;
+    }
+  }
+
+  #logo {
+    float: left;
+    width: 30px;
+    height: 27px; // Harcode height to eliminate layout shifts during rendering
+    img {
+      margin-top: 0;
+      height: 30px;
+      width: auto;
+    }
+  }
+
+  h1 {
+    font-size: 25px;
+    float: left;
+    margin: 0;
+    padding-left: 10px;
+  }
+
+  #b {
+    margin: 0;
+    z-index: 9;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #e2e2e2;
+    padding: 15px;
+    box-sizing: border-box;
+    height: auto;
+    background-color: #fffd;
+    backdrop-filter: blur(3px);
+  }
+
+  #m {
+    display: block;
+
+    // Make the 'tap target' larger
+    padding: 17px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .pagination {
+    padding: 0 10px;
+  }
+  #main {
+    // Remove left sidebar border because there is no sidebar anymore
+    border: none;
+  }
+  #u {
+    // Setting max height to 0 hides the menu until the checkbox is checked
+    max-height: 0;
+    // Width 100% needed for iOS Safari
+    width: 100%;
+    position: absolute;
+    background-color: #fffe;
+    left: 0;
+    top: 60px;
+  }
+  #e {
+    padding: 0;
+    a {
+      border-top: 1px solid #e2e2e2;
+      margin: 0;
+      padding: 15px;
+    }
+  }
+  #s {
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    position: relative;
+    padding: 5px;
+  }
+}
+
+// Header images
+
+.i0 {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.i1 {
+  height: 0;
+  position: relative
+}
+
+.i2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0
+}

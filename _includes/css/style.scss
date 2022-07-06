@@ -1,28 +1,23 @@
-// @import "./constants.scss";
-// @import "./sidebar.scss";
-// @import "./header.scss";
-
 :root {
   --font: 'Inconsolata', monospace;
   --bg-color: rgb(247, 247, 247);
   --text-color: #474747;
   --highlight-color: rgb(238, 123, 30);
+  --break: 880px;
 }
 
-html {
+body, html {
+  width: 100%;
   height: 100%;
 }
 
 body {
+  box-sizing: border-box;
   font-family: var(--font);
   margin: 0;
   display: flex;
-  height: 100%;
   background-color: var(--bg-color);
-
-  // Make everything pretty
-  // -webkit-font-smoothing: antialiased;
-  // text-rendering: optimizeLegibility;
+  padding: 25px;
 }
 
 p, a {
@@ -31,21 +26,33 @@ p, a {
 
 #outer {
   width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+  @media(min-width: 881px) {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 #inner {
   display: flex;
-  width: 992px;
+  max-width: 100%;
+  box-sizing: border-box;
   column-gap: 50px;
 
   > div {
-    width: 50%;
     display: flex;
     flex-direction: column;
+
+    @media(min-width: 881px) {
+      width: 50%;
+    }
+  }
+
+  #avatar {
+    justify-content: flex-end;
+    align-items: center;
   }
 
   p {
@@ -53,6 +60,23 @@ p, a {
     width: calc(100% + 0.125rem);
     font-size: 16px;
     line-height: 1.875;
+  }
+
+
+  @media(min-width: 881px) {
+    width: 992px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  @media(max-width: 880px) {
+    flex-direction: column-reverse;
+     img {
+      width: 300px;
+      max-width: 100%;
+     }
   }
 }
 
@@ -94,5 +118,11 @@ h1 {
   font-size: 70px;
   margin: 0 0 20px;
   font-weight: 700;
-  color: rgb(71, 71, 71)
+  color: rgb(71, 71, 71);
+  
+  @media(max-width: 880px) {
+    font-size: 65px;
+    text-align: center;
+    margin-top: 36px;
+  }
 }

@@ -1,5 +1,6 @@
 ---
 layout: default
 ---
+{% capture styles %}{% include css/post.scss %}{% endcapture %}<style>{{ styles | scssify }}</style>
 {% assign first = true %}
 {% include post %}
