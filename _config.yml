@@ -9,8 +9,8 @@ excerpt_separator: '<!--break-->'
 website:
     title: Chris' Blag
     description: Various ramblings.
-    image: http://chrislewis.com.au/images/developer-koala.jpg
-    production_url: http://www.chrislewis.com.au
+    image: https://chrislewis.au/images/developer-koala.jpg
+    production_url: https://chrislewis.au
 author:
     name: Chris Lewis
     email: chris.lewis2@gmail.com
