@@ -129,6 +129,7 @@ p, a {
     line-height: 25px;
     transition: background-color 0.25s ease;
     text-decoration: none;
+    box-sizing: border-box;
 
     &:hover {
       color: #474747;
