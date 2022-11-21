@@ -129,7 +129,6 @@ p, a {
     line-height: 25px;
     transition: background-color 0.25s ease;
     text-decoration: none;
-    box-sizing: border-box;
 
     &:hover {
       color: #474747;
@@ -143,6 +142,7 @@ p, a {
     @media(max-width: $mobile-breakpoint) {
       width: 100%;
       max-width: 100%;
+      box-sizing: border-box;
     }
   }
 
