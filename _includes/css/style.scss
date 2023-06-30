@@ -98,9 +98,9 @@ p, a {
   @media(max-width: $tablet-breakpoint) {
     flex-direction: column-reverse;
      img {
-      width: 300px;
-      max-width: 100%;
-     }
+      width: 100%;
+      aspect-ratio: 500/455;
+    }
   }
 }
 
