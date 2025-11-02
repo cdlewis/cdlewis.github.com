@@ -15,7 +15,9 @@ $tablet-breakpoint: 999px;
 html,
 body {
   margin: 0;
-  height: 100%;
+  @media (min-width: $tablet-breakpoint) {
+    height: 100%;
+  }
 }
 
 body {
@@ -69,8 +71,8 @@ p {
   margin-left: -4px;
 
   @media (max-width: $tablet-breakpoint) {
-    font-size: 34px;
-    margin: 0;
+    font-size: 32px;
+    margin: 16px 0px;
   }
 }
 
